@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "particles.js": "^2.0.0"
+    "jquery": "^3.7.0"
   }
 }
