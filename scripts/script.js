@@ -13,20 +13,17 @@ $(document).ready(function () {
             }
         });
     });
-});
 
-$(document).ready(function() {
     $(window).scroll(function() {
-      var windowHeight = $(window).height();
-      var scrollTop = $(window).scrollTop();
-  
-      $(".card").each(function() {
-        var cardTop = $(this).offset().top;
-  
-        if (cardTop < windowHeight + scrollTop) {
-          $(this).addClass("fade-in");
-        }
-      });
+        var windowHeight = $(window).height();
+        var scrollTop = $(window).scrollTop();
+    
+        $(".card").each(function() {
+            var cardTop = $(this).offset().top;
+    
+            if (cardTop < windowHeight + scrollTop) {
+                $(this).addClass("fade-in");
+            }
+        });
     });
-  });
-  
+});
