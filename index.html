@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacilandia en Concierto - Nueva Arena</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Vacilandia En Concierto - Nueva Arena</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="particles-js"></div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="materials/logos/venconcierto.png" alt="Mi Logo"></a>
@@ -45,13 +48,13 @@
     </nav>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active fade">
                 <img src="materials/images/slide1.jpeg" class="d-block w-100" alt="Imagen 1">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item fade">
                 <img src="materials/images/slide2.jpeg" class="d-block w-100" alt="Imagen 2">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item fade">
                 <img src="materials/images/slide3.jpeg" class="d-block w-100" alt="Imagen 3">
             </div>
         </div>
@@ -64,154 +67,196 @@
             <span class="sr-only">Siguiente</span>
         </a>
     </div>
-    <div class="container text-center mt-4">
-        <h1 style="color: #FFD200; font-weight: bold; text-shadow: 1px 1px 2px #FFD200;">VACILANDIA EN CONCIERTO</h1>
-        <p style="color: #ffffff;">Los mejores conciertos que te harán vivir emociones con los mejores artistas del
-            momento</p>
+    <div class="container text-center" id="title-1">
+        <h1 id="title">VACILANDIA EN CONCIERTO</h1>
+        <p id="subtitle">Los mejores conciertos que te harán vivir emociones con los mejores artistas del momento</p>
     </div>
-    <div class="container text-center" id="cartelera">
-        <h1 style="color: #FFD200; font-weight: bold; text-shadow: 1px 1px 2px #FFD200;">CARTELERA DE EVENTOS</h1>
+    <div class="container">
+        <h2 class="text-center card-title" id="title-2">CARTELERA DE EVENTOS</h2>
     </div>
-    <div class="container mt-4">
+    <div class="container" id="cartelera">
         <div class="row">
             <div class="col-md-4">
-                <div class="card border border-3 border-warning bg-transparent">
-                    <div class="card-img-wrapper">
-                        <img src="materials/images/04dejunio.jpg" class="card-img-top" alt="Imagen 1">
+                <article class="article-wrapper">
+                    <div class="rounded-lg container-project" class="img-project">
+                        <img src="materials/images/04dejunio.jpg" alt="">
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">4 Junio</p>
-                            </div>
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">Grupo Guinda</p>
+                    <div class="project-info">
+                        <div class="flex-pr">
+                            <div class="project-title text-nowrap">Comprar</div>
+                            <div class="project-hover">
+                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                    <line y2="12" x2="19" y1="12" x1="5"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
                             </div>
                         </div>
-                        <button class="btn btn-warning btn-block">COMPRAR</button>
+                        <div class="types">
+                            <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(255, 255, 255);"
+                                class="project-type">04 JUNIO</span>
+                            <span class="project-type">GRUPO GUINDA</span>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
             <div class="col-md-4">
-                <div class="card border border-3 border-warning bg-transparent">
-                    <div class="card-img-wrapper">
-                        <img src="materials/images/armonia10.jpg" class="card-img-top" alt="Imagen 1">
+                <article class="article-wrapper">
+                    <div class="rounded-lg container-project" class="img-project">
+                        <img src="materials/images/armonia10.jpg" alt="">
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">9 Julio</p>
-                            </div>
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">Armonia 10</p>
+                    <div class="project-info">
+                        <div class="flex-pr">
+                            <div class="project-title text-nowrap">Comprar</div>
+                            <div class="project-hover">
+                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                    <line y2="12" x2="19" y1="12" x1="5"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
                             </div>
                         </div>
-                        <button class="btn btn-warning btn-block">COMPRAR</button>
+                        <div class="types">
+                            <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(255, 255, 255);"
+                                class="project-type">09 JULIO</span>
+                            <span class="project-type">AGUA MARINA</span>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
             <div class="col-md-4">
-                <div class="card border border-3 border-warning bg-transparent">
-                    <div class="card-img-wrapper">
-                        <img src="materials/images/corazon.jpg" class="card-img-top" alt="Imagen 1">
+                <article class="article-wrapper">
+                    <div class="rounded-lg container-project" class="img-project">
+                        <img src="materials/images/corazon.jpg" alt="">
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">30 Octubre</p>
-                            </div>
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">Corazón Serrano</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-warning btn-block">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card border border-3 border-warning bg-transparent">
-                    <div class="card-img-wrapper">
-                        <img src="materials/images/deivis.jpg" class="card-img-top" alt="Imagen 1">
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">29 Marzo</p>
-                            </div>
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">Deivis Orosco</p>
+                    <div class="project-info">
+                        <div class="flex-pr">
+                            <div class="project-title text-nowrap">Comprar</div>
+                            <div class="project-hover">
+                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                    <line y2="12" x2="19" y1="12" x1="5"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
                             </div>
                         </div>
-                        <button class="btn btn-warning btn-block">COMPRAR</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border border-3 border-warning bg-transparent">
-                    <div class="card-img-wrapper">
-                        <img src="materials/images/halloween.jpg" class="card-img-top" alt="Imagen 1">
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">31 Octubre</p>
-                            </div>
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">Evento Halloween</p>
-                            </div>
+                        <div class="types">
+                            <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(255, 255, 255);"
+                                class="project-type">30 OCTUBE</span>
+                            <span class="project-type">CORAZÓN SERRANO</span>
                         </div>
-                        <button class="btn btn-warning btn-block">COMPRAR</button>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border border-3 border-warning bg-transparent">
-                    <div class="card-img-wrapper">
-                        <img src="materials/images/lobo.jpg" class="card-img-top" alt="Imagen 1">
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">1 Mayo</p>
-                            </div>
-                            <div class="col">
-                                <p class="card-text font-weight-bold text-white">El Lobo</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-warning btn-block">COMPRAR</button>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
     </div>
-    <div class="container text-center mt-8" id="plan">
-        <h1 style="color: #FFD200; font-weight: bold; text-shadow: 1px 1px 2px #FFD200;">PLANEA TU VISITA</h1>
-        <p style="color: #ffffff;">VIVE UNA EXPERIENCIA UNICA</p>
-    </div>
-    <div class="container" id="visita">
-        <div class="column">
-          <h2 class="title"><i class="fas fa-map-marker-alt"></i> COMO LLEGAR</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62578.982462425925!2d-76.95786433616679!3d-12.02922845974284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b972b149fbeb%3A0x6726cbba621b676f!2sAv.%20Las%20Gaviotas%20con%20Av.%20El%20Rosal%2C%20Urb.%20Las%20Gardenias%2C%20Santa%20Anita%2015062%2C%20Per%C3%BA!5e0!3m2!1sen!2sus!4v1623767828836!5m2!1sen!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <p class="location">Av. Las Gaviotas con Av. El Rosal, Urb. Las Gardenias<br>Ref. a 5 minutos del Mercado Productores de Santa Anita</p>
-        </div>
-        <div class="column">
-          <div class="button-container">
-            <a href="https://api.whatsapp.com/send?phone=1234567890" class="whatsapp-button">
-              <i class="fab fa-whatsapp"></i>
-              <span class="whatsapp-text">WHATSAPP AQUÍ</span>
-            </a>
-            <div class="parking">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="parking-text">ESTACIONAMIENTO GRATIS</span>
+    <div class="container" id="cartelera">
+        <div class="row">
+            <div class="col-md-4">
+                <article class="article-wrapper">
+                    <div class="rounded-lg container-project" class="img-project">
+                        <img src="materials/images/04dejunio.jpg" alt="">
+                    </div>
+                    <div class="project-info">
+                        <div class="flex-pr">
+                            <div class="project-title text-nowrap">Comprar</div>
+                            <div class="project-hover">
+                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                    <line y2="12" x2="19" y1="12" x1="5"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="types">
+                            <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(255, 255, 255);"
+                                class="project-type">04 JUNIO</span>
+                            <span class="project-type">GRUPO GUINDA</span>
+                        </div>
+                    </div>
+                </article>
             </div>
-          </div>
+            <div class="col-md-4">
+                <article class="article-wrapper">
+                    <div class="rounded-lg container-project" class="img-project">
+                        <img src="materials/images/armonia10.jpg" alt="">
+                    </div>
+                    <div class="project-info">
+                        <div class="flex-pr">
+                            <div class="project-title text-nowrap">Comprar</div>
+                            <div class="project-hover">
+                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                    <line y2="12" x2="19" y1="12" x1="5"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="types">
+                            <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(255, 255, 255);"
+                                class="project-type">09 JULIO</span>
+                            <span class="project-type">AGUA MARINA</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="article-wrapper">
+                    <div class="rounded-lg container-project" class="img-project">
+                        <img src="materials/images/corazon.jpg" alt="">
+                    </div>
+                    <div class="project-info">
+                        <div class="flex-pr">
+                            <div class="project-title text-nowrap">Comprar</div>
+                            <div class="project-hover">
+                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
+                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
+                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                                    <line y2="12" x2="19" y1="12" x1="5"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="types">
+                            <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(255, 255, 255);"
+                                class="project-type">30 OCTUBE</span>
+                            <span class="project-type">CORAZÓN SERRANO</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-      </div>           
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="scripts/script.js"></script>
+    </div>
+    <div class="container">
+        <h2 class="text-center card-title" id="title-2">PLANIFICA TU VISITA</h2>
+    </div>
+    <div class="container" id="special-container">
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="title">COMO LLEGAR <i class="fas fa-map-marker-alt"></i></h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78081.88291161218!2d-74.062287421875!3d40.63712931228578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0x1803e6b402ef78d1!2sNew%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2smx!4v1623778261570!5m2!1ses!2smx"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="address">Av. Las Gaviotas con Av. El Rosal, Urb. Las Gardenias<br>Ref. a 5 minutos del Mercado
+                    Productores de Santa Anita</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <button>
+                    CONTÁCTANOS AQUI
+                </button>
+                <h2 class="title">ESTACIONAMIENTO GRATIS <i class="fa-sharp fa-solid fa-car-side" style="color: #ffffff;"></i></h2>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

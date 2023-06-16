@@ -1,15 +1,14 @@
 html,
 body {
     margin: 0;
-    background-color: #050027;
     padding: 0;
 }
 
 .navbar {
-    background-color: #FFD200;
+    background-color: #2BABE2;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar-brand img {
@@ -25,10 +24,10 @@ body {
 }
 
 .navbar-nav .nav-link {
-    font-weight: bold;
     color: #000;
     background-color: transparent;
     border: none;
+    font-weight: bold;
 }
 
 .navbar-nav .social-icons {
@@ -53,9 +52,14 @@ body {
 
 .carousel-item img {
     object-fit: cover;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
+    filter: saturate(1.5);
+    /* Ajusta el valor de saturación según tus preferencias */
+    transition: transform 0.5s ease;
+
 }
+
 #particles-js {
     position: fixed;
     top: 0;
@@ -66,154 +70,262 @@ body {
     z-index: -1;
 }
 
-#cartelera{
-    margin-top: 2cm;
-}
-
-.card{
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fade-in{
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-.card-img-wrapper {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; /* Relación de aspecto 16:9 (dividir la altura por el ancho y multiplicar por 100) */
-}
-
-.card-img-wrapper img {
+/* Agregar degradado arriba del carrusel */
+.carousel:before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
-    transition: transform 0.3s ease; /* Transición para el efecto de zoom */
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(43, 171, 226, 1), transparent);
+    z-index: 1;
 }
 
-.card-img-wrapper:hover img {
-    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+/* Agregar degradado abajo del carrusel */
+.carousel:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(5, 0, 39, 1), transparent);
+    z-index: 1;
 }
 
-.card-text {
-    padding: 10px;
-    font-size: 12px;
+#title-1 {
+    margin-top: 2cm;
+}
+
+#subtitle {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#title {
+    color: #2BABE2;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px #2BABE2;
+    margin-top: 2cm;
+}
+
+#title-2 {
+    color: #2BABE2;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px #2BABE2;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+
+.col-md-4 {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 40%;
     justify-content: center;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
 }
 
-.animate-zoom {
-    animation: zoom-in 1s ease forwards;
+.carousel-item {
+    position: relative;
+    overflow: hidden;
 }
 
-@keyframes zoom-in {
-    0% {
-        transform: scale(2);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+.carousel-item:hover img {
+    transform: scale(1.1);
 }
 
-/* Estilos adicionales para el efecto de fade in al hacer scroll */
-.image-fade-in {
+.carousel-item.fade {
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.image-fade-in.fade-in {
+.carousel-item.fade.active {
     opacity: 1;
 }
 
-#plan{
-    margin-top: 5cm;
+/* CARTELERA */
+
+#cartelera {
+    display: flex;
+    justify-content: center;
 }
 
-#visita {
-    display: flex;
-  }
-  
-  .column {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .title {
-    color: #FFD200;
-  }
-  
-  .title i {
-    margin-right: 10px;
-  }
-  
-  .location {
-    font-size: 12px;
-    color: #FFD200;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .whatsapp-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #25D366;
-    color: white;
-    text-decoration: none;
+.article-wrapper {
+    width: 350px;
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
     border-radius: 10px;
-    box-shadow: 0 0 10px #25D366;
-    transition: box-shadow 0.3s;
-  }
-  
-  .whatsapp-button:hover {
-    box-shadow: 0 0 15px #25D366;
-  }
-  
-  .whatsapp-button i {
-    margin-right: 10px;
-  }
-  
-  .whatsapp-text {
-    margin-right: 10px;
-  }
-  
-  .parking {
+    padding: 5px;
+    border: 4px solid transparent;
+    cursor: pointer;
+}
+
+.article-wrapper:hover {
+    -webkit-box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #4444bd;
+    box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #4444bd;
+    border-color: #0578c5;
+    -webkit-transform: translate(-20px, -20px);
+    -ms-transform: translate(-20px, -20px);
+    transform: translate(-20px, -20px);
+}
+
+.article-wrapper:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.types {
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    place-content: flex-start;
+}
+
+.rounded-lg {
+    /* class tailwind */
+    border-radius: 10px;
+    /* Para aplicar esquinas redondeadas al contenedor */
+}
+
+.article-wrapper:hover .project-hover {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #FFD200;
+}
+
+.project-info {
+    padding-top: 20px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-title {
+    font-size: 1.4em;
+    margin: 0;
+    font-weight: 600;
+    /* depend de la font */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+    border-radius: 20px;
+    color: #FFD200;
+    text-shadow: 2px 2px 4px #FFD200;
+}
+
+.flex-pr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    margin-top: 10px;
-  }
-  
-  .parking i {
-    color: white;
-    margin-right: 5px;
-  }
-  
-  .parking-text {
+}
+
+.project-type {
+    background: #2BABE2;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+    border-radius: 15px;
+    font-size: 15px;
+    letter-spacing: -0.6px
+}
+
+.project-hover {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.container-project {
+    overflow: hidden;
+    /* Para ocultar cualquier parte de la imagen que se desborde del contenedor */
+    width: 100%;
+    /* Puedes ajustar el ancho del contenedor según tus necesidades */
+    height: 200px;
+    /* Igualas la altura al ancho para mantener el cuadrado */
+}
+
+.container-project img {
+    width: 100%;
+    /* La imagen se adaptará al ancho del contenedor */
+    height: 100%;
+    /* La altura se ajustará proporcionalmente al ancho */
+    object-fit: cover;
+    /* La imagen se ajustará para cubrir el contenedor */
+}
+
+.whatsapp-button:hover {
+    box-shadow: 0 0 5px #25D366;
+}
+
+.special-container i{
+    font-size: 2cm;
+}
+
+.title {
+    color: #FFD200;
+    text-shadow: 2px 2px 4px #FFD200;
+    font-weight: bold;
+    text-shadow: 1px 1px 20px #FFD200;
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+iframe {
+    border: 0;
+}
+
+.address {
     color: white;
     font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+}
+
+button {
+    --width: 300px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: rgb(64, 192, 87);
+    transition: all 0.2s;
+    border-radius: 3px;
+    margin-bottom: 1cm;
   }
   
-  iframe {
-    width: 100%;
-    height: 300px;
+  button:hover {
+    background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
   }
   
+  @keyframes dance6123 {
+    to {
+      background-position: var(--width);
+    }
+  }
