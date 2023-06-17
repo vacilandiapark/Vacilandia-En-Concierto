@@ -1,5 +1,6 @@
 html,
 body {
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -330,4 +331,61 @@ iframe {
     to {
         background-position: var(--width);
     }
+}
+
+#espacios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.column {
+    flex: 1;
+}
+
+#espacios .image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-3d {
+    width: 550px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+.image-3d:hover {
+    transform: rotateY(30deg);
+}
+
+.pricing-table {
+    margin-left: 10vh;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.pricing-table th {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 4vh;
+}
+
+.pricing-table td.cell-color {
+    color: #000000;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 4vh;
+}
+
+.pricing-table td.cell-price {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 4vh;
 }

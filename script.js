@@ -146,3 +146,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Iniciar el bucle de actualización del carrusel
     updateItemTransform();
 });
+
+
+// Configuración de ScrollReveal
+ScrollReveal().reveal('.card-item', {
+    delay: 50,                 // Retardo antes de la animación (en milisegundos)
+    duration: 1000,             // Duración de la animación (en milisegundos)
+    origin: 'bottom',           // Desde dónde se originará la animación
+    distance: '50px',           // Distancia de desplazamiento durante la animación
+    opacity: 0,                 // Opacidad inicial del elemento
+    scale: 0.8,                 // Escala inicial del elemento
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',   // Curva de aceleración de la animación
+    reset: true,                // Restablecer animación al desplazarse hacia arriba
+    interval: 200               // Intervalo entre la animación de cada elemento
+  });
+
+
+  
