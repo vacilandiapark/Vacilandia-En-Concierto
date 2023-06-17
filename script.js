@@ -130,12 +130,12 @@ document.addEventListener('DOMContentLoaded', function () {
         activeItem.style.transform = 'scale(1.1) translate(' + dx + 'px, ' + dy + 'px)';
         carouselItems.forEach(function (item) {
             if (item !== activeItem) {
-              item.style.transform = 'scale(1) translate(0, 0)';
+                item.style.transform = 'scale(1) translate(0, 0)';
             }
-          });
-      
+        });
+
         requestAnimationFrame(updateItemTransform);
-      }
+    }
 
     // Añadir un evento al contenedor del carrusel para rastrear la posición del ratón
     document.querySelector('#carouselExampleControls').addEventListener('mousemove', function (event) {
@@ -159,7 +159,5 @@ ScrollReveal().reveal('.card-item', {
     easing: 'cubic-bezier(0.5, 0, 0, 1)',   // Curva de aceleración de la animación
     reset: true,                // Restablecer animación al desplazarse hacia arriba
     interval: 200               // Intervalo entre la animación de cada elemento
-  });
+});
 
-
-  
