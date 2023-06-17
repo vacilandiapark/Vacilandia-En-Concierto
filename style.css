@@ -334,6 +334,7 @@ iframe {
 
 #espacios {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -341,6 +342,8 @@ iframe {
 
 .column {
     flex: 1;
+    margin-bottom: 20px;
+    /* Agrega un espacio entre las columnas */
 }
 
 #espacios .image-container {
@@ -349,7 +352,10 @@ iframe {
 }
 
 .image-3d {
-    width: 550px;
+    max-width: 100%;
+    /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    /* Ajusta la altura automáticamente */
     transform-style: preserve-3d;
     transition: transform 0.3s;
 }
@@ -359,7 +365,10 @@ iframe {
 }
 
 .pricing-table {
-    margin-left: 10vh;
+    margin-left: 10px;
+    /* Ajusta el margen izquierdo */
+    margin-right: 10px;
+    /* Ajusta el margen derecho */
     width: 100%;
     border-collapse: collapse;
 }
@@ -388,6 +397,23 @@ iframe {
     font-weight: bold;
     font-size: 4vh;
 }
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    #espacios {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-bottom: 0;
+    }
+
+    .pricing-table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 
 .button-container {
     display: flex;
