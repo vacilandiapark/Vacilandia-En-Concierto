@@ -388,3 +388,32 @@ iframe {
     font-weight: bold;
     font-size: 4vh;
 }
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -5px;
+    /* Ajusta el margen inferior del contenedor */
+}
+
+.custom-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Margen superior entre botones */
+    margin-bottom: 100px;
+    /* Margen inferior entre botones */
+}
+
+.custom-button:last-child {
+    margin-bottom: 0;
+    /* Elimina el margen inferior del último botón */
+}
+
+.custom-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
