@@ -150,10 +150,11 @@ body {
 #cartelera {
     display: flex;
     justify-content: center;
+    margin-top: 20px
 }
 
 .article-wrapper {
-    width: 350px;
+    width: 100%;
     -webkit-transition: 0.15s all ease-in-out;
     transition: 0.15s all ease-in-out;
     border-radius: 10px;
@@ -263,7 +264,7 @@ body {
     /* Para ocultar cualquier parte de la imagen que se desborde del contenedor */
     width: 100%;
     /* Puedes ajustar el ancho del contenedor según tus necesidades */
-    height: 200px;
+    height: 400px;
     /* Igualas la altura al ancho para mantener el cuadrado */
 }
 
