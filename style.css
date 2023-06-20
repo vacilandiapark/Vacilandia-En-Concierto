@@ -35,6 +35,10 @@ body {
     padding: 0;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 .navbar {
     background-color: #000000;
     position: sticky;
@@ -85,7 +89,7 @@ body {
 
 .carousel-item img {
     object-fit: contain;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     filter: saturate(1.5);
     /* Ajusta el valor de saturación según tus preferencias */
@@ -193,9 +197,6 @@ body {
 }
 
 .article-wrapper:hover {
-    -webkit-box-shadow: 10px 10px 0 #666666, 20px 20px 0 #CCCCCC;
-    box-shadow: 10px 10px 0 #666666, 20px 20px 0 #CCCCCC;
-    border-color: #333333;
     -webkit-transform: translate(-20px, -20px);
     -ms-transform: translate(-20px, -20px);
     transform: translate(-20px, -20px);
@@ -353,116 +354,4 @@ iframe {
     to {
         background-position: var(--width);
     }
-}
-
-#espacios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.column {
-    flex: 1;
-    margin-bottom: 20px;
-    /* Agrega un espacio entre las columnas */
-}
-
-#espacios .image-container {
-    display: flex;
-    justify-content: center;
-}
-
-.image-3d {
-    max-width: 100%;
-    /* Ajusta el tamaño máximo de la imagen */
-    height: auto;
-    /* Ajusta la altura automáticamente */
-    transform-style: preserve-3d;
-    transition: transform 0.3s;
-}
-
-.image-3d:hover {
-    transform: rotateY(30deg);
-}
-
-.pricing-table {
-    margin-left: 10px;
-    /* Ajusta el margen izquierdo */
-    margin-right: 10px;
-    /* Ajusta el margen derecho */
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.pricing-table th,
-.pricing-table td {
-    padding: 10px;
-    text-align: center;
-}
-
-.pricing-table th {
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 4vh;
-}
-
-.pricing-table td.cell-color {
-    color: #000000;
-    font-weight: bold;
-    background-color: transparent;
-    font-size: 4vh;
-}
-
-.pricing-table td.cell-price {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 4vh;
-}
-
-/* Media Query para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-    #espacios {
-        flex-direction: column;
-    }
-
-    .column {
-        margin-bottom: 0;
-    }
-
-    .pricing-table {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: -5px;
-    /* Ajusta el margen inferior del contenedor */
-}
-
-.custom-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-top: 10px;
-    /* Margen superior entre botones */
-    margin-bottom: 100px;
-    /* Margen inferior entre botones */
-}
-
-.custom-button:last-child {
-    margin-bottom: 0;
-    /* Elimina el margen inferior del último botón */
-}
-
-.custom-button img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
