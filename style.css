@@ -37,6 +37,7 @@ body {
 
 a {
     text-decoration: none !important;
+    color: white;
 }
 
 .navbar {
@@ -106,7 +107,7 @@ a {
     background-color: black
         /*#040138*/
     ;
-    z-index: -1;
+    z-index: 0;
 }
 
 /* Agregar degradado arriba del carrusel */
@@ -137,27 +138,45 @@ a {
 #subtitle {
     color: #ffffff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Champagne-Bold;
+    line-height: 25px;
+    margin-bottom: 7cm;
 }
 
 #title {
-    color: #ffffff;
+    color: #2BABE2;
     font-weight: bold;
     font-size: 80px;
-    text-shadow: 2px 2px 4px #ffffff;
-    margin-top: 2cm;
+    margin-top: 1cm;
     font-family: Bison-Bold;
 }
 
-#title-2 {
-    color: #ffffff;
-    font-weight: bold;
+
+.blue-text {
+    position: relative;
+    top: -100px;
+    transform: translateY(-100%);
+}
+
+.white-text {
+    position: relative;
+    top: -48px;
     font-size: 80px;
-    text-shadow: 2px 2px 4px #ffffff;
-    margin-top: 2cm;
-    margin-bottom: 2cm;
-    font-family: Bison-Bold
+    color: white;
+    font-family: Champagne-Bold;
+}
+
+#title-2 {
+    color: #2BABE2;
+    font-weight: bold;
+    font-size: 90px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: Bison-Bold;
+    text-align: center;
+    position: relative;
+    line-height: 0;
 }
 
 .col-md-4 {

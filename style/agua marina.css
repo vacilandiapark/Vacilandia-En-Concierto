@@ -260,18 +260,27 @@ a{
     color: white;
     transition: all 0.3s ease;
     width: 200px;
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
 
 #BOTON-COMPRA:hover {
     transform: scale(1.05);
+    outline: none;
+    box-shadow: none;
+}
+
+#opciones-compra{
+    background-color: black !important;
 }
 
 .list-group {
     margin-top: 10px;
+    font-weight: bold;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent;
 }
 
 .list-group-item {
@@ -294,7 +303,6 @@ a{
     background-color: black;
     color: white;
     padding: 70px 0;
-    border-top: 15px solid white;
     font-family: Arial, sans-serif;
 }
 

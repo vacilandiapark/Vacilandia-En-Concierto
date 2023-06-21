@@ -161,3 +161,21 @@ ScrollReveal().reveal('.card-item', {
     interval: 200               // Intervalo entre la animación de cada elemento
 });
 
+$(document).ready(function() {
+    // Agrega el desplazamiento suave a todos los enlaces dentro del navbar
+    $(".navbar-nav a").on("click", function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            // Desplazamiento suave utilizando el método animate de jQuery
+            $("html, body").animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                // Agrega el hash (#) a la URL después de desplazarse
+                window.location.hash = hash;
+            });
+        }
+    });
+});
