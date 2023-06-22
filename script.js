@@ -156,14 +156,26 @@ particlesJS("particles-js", {
 
 AOS.init();
 
-// JavaScript
-document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.getElementById("navbar");
-    const toggleButton = document.querySelector(".toggle-button");
-    const navLinks = document.querySelector(".nav-links");
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtén los enlaces del navbar
+    const navLinks = document.querySelectorAll('#navbar .nav-links a');
 
-    toggleButton.addEventListener("click", function () {
-        navbar.classList.toggle("active");
-        navLinks.classList.toggle("active");
+    // Agrega un evento de clic a cada enlace
+    navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            // Verifica si el enlace apunta a una sección dentro de la misma página
+            if (link.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+
+                // Obtiene el ID de la sección a la que se debe desplazar
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                // Realiza el desplazamiento suave utilizando el método 'scrollIntoView'
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 });
