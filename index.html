@@ -4,212 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Vacilandia En Concierto - Nueva Arena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <title>Vacilandia - Nueva Arena</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="particles-js"></div>
-    <nav class="navbar navbar-expand-lg">
+    <div id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="materials/logos/venconcierto.png" alt="Mi Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cartelera">CARTELERA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#special-container">UBICACIÓN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer">CONTACTO</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item social-icons">
-                        <a class="nav-link" href="https://www.facebook.com/Vacilandiaenconcierto"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li class="nav-item social-icons">
-                        <a class="nav-link" href="https://www.tiktok.com/@vacilandiaconcierto.pe"><i class="fab fa-tiktok"></i></a>
-                    </li>
-                    <li class="nav-item social-icons">
-                        <a class="nav-link" href="https://www.instagram.com/vacilandiaenconcierto/"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
+            <div class="logo">
+                <img src="materials/images/venconcierto.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#">Cartelera</a>
+                <a href="#">Ubicación</a>
+                <a href="#">Galería</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/search/top?q=vacilandia%20en%20concierto"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@vacilandiaconcierto.pe"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/vacilandiaenconcierto/"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/+51953210220"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
-    </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item fade">
-                <img src="materials/images/portada.jpg" class="d-block w-100" alt="Imagen 1">
-            </div>
-            <div class="carousel-item active fade">
-                <img src="materials/images/slide2.jpg" class="d-block w-100" alt="Imagen 2">
+    </div>
+    <div id="banner">
+        <img src="materials/images/slide2.jpg" alt="Imagen">
+        <div id="shadow-bottom"></div>
+        <div id="logo">
+            <img src="materials/images/venconcierto.png" alt="Logo">
+        </div>
+        <div id="tagline">
+            <p>La nueva arena de Lima</p>
+        </div>
+    </div>
+    <div id="introduccion">
+        <div class="columna" data-aos="fade-up" data-aos-duration="1000">
+            <div class="carrusel">
+                <div class="imagenes">
+                    <img class="imagen active" src="materials/images/slide2.jpg" alt="Imagen 1">
+                    <img class="imagen" src="materials/images/slide3.jpg" alt="Imagen 2">
+                    <img class="imagen" src="materials/images/slide5.jpg" alt="Imagen 3">
+                </div>
+                <div class="boton anterior" onclick="carruselAnterior()">&#10094;</div>
+                <div class="boton siguiente" onclick="carruselSiguiente()">&#10095;</div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-    <!--<div class="container text-center" id="title-1">
-        <h1 id="title">VACILANDIA EN CONCIERTO</h1>
-        <p id="subtitle">Los mejores conciertos que te harán vivir<br>emociones con los mejores artistas del momento</p>
-    </div>-->
-    <div class="container">
-        <h2 class="text-center card-title" id="title-2">
-            <span class="blue-text">CARTELERA DE</span><br>
-            <span class="white-text">EVENTOS</span>
-          </h2>
-    </div>
-    <div class="container" id="cartelera">
-        <div class="row">
-            <div class="col-md-4 card-item">
-                <article class="article-wrapper">
-                    <div class="rounded-lg container-project" class="img-project">
-                        <img src="materials/images/aguamarina.jpg" alt="">
-                    </div>
-                    <div class="project-info">
-                        <a href="pages/agua marina.html">
-                            <div class="flex-pr">
-                                <div class="project-title text-nowrap">MÁS INFORMACIÓN</div>
-                                <div class="project-hover">
-                                    <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg"
-                                        width="2em" height="2em" color="black" stroke-linejoin="round"
-                                        stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none"
-                                        stroke="currentColor">
-                                        <line y2="12" x2="19" y1="12" x1="5"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="types">
-                            <span style="color: rgb(255, 255, 255);" class="project-type">09 JULIO</span>
-                            <span class="project-type">AGUA MARINA</span>
-                        </div>
-                    </div>
-                </article>
+        <div class="columna" id="cuadro-blanco" data-aos="fade-up" data-aos-duration="1000">
+            <div class="contenido">
+                <h2>Vacilandia en Concierto</h2>
+                <p>La nueva arena de Lima</p>
+                <p class="resumen">¡Disfruta de un espectáculo inolvidable en la nueva arena de Lima! Vive la emoción de
+                    la música en vivo, los artistas más destacados y una experiencia única llena de diversión y
+                    entretenimiento.</p>
+                <p class="anio">2023</p>
             </div>
-            <div class="col-md-4 card-item">
-                <article class="article-wrapper">
-                    <div class="rounded-lg container-project" class="img-project">
-                        <img src="materials/images/you!.png" alt="">
-                    </div>
-                    <div class="project-info">
-                        <div class="flex-pr">
-                            <div class="project-title text-nowrap">Comprar</div>
-                            <div class="project-hover">
-                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
-                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
-                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
-                                    <line y2="12" x2="19" y1="12" x1="5"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="types">
-                            <span style="color: rgb(255, 255, 255);" class="project-type">22 JULIO</span>
-                            <span class="project-type">FESTIVAL SALSA</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-4 card-item">
-                <article class="article-wrapper">
-                    <div class="rounded-lg container-project" class="img-project">
-                        <img src="materials/images/you!.png" alt="">
-                    </div>
-                    <div class="project-info">
-                        <div class="flex-pr">
-                            <div class="project-title text-nowrap">Comprar</div>
-                            <div class="project-hover">
-                                <svg style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="2em"
-                                    height="2em" color="black" stroke-linejoin="round" stroke-linecap="round"
-                                    viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
-                                    <line y2="12" x2="19" y1="12" x1="5"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
+        </div>
+    </div>
+    <div id="cartelera">
+        <h2>Cartelera de eventos</h2>
+        <div class="eventos-container">
+            <a href="pagina-evento1.html" class="evento" data-aos="fade-right" data-aos-duration="1000">
+                <div class="evento-img">
+                    <img src="materials/images/agua marina.png" alt="Evento 1">
+                </div>
+                <div class="evento-info">
+                    <h3>AGUA MARINA Y DEYVIS OROSCO</h3>
+                    <p>Fecha: 09 de julio</p>
+                </div>
+            </a>
+            <a href="pagina-evento2.html" class="evento" data-aos="fade-in" data-aos-duration="1000">
+                <div class="evento-img">
+                    <img src="materials/images/daniela dancourt.png" alt="Evento 2">
+                </div>
+                <div class="evento-info">
+                    <h3>DANIELA DARCOURT</h3>
+                    <p>Fecha: 22 de julio</p>
+                </div>
+            </a>
+            <a href="pagina-evento3.html" class="evento" data-aos="fade-left" data-aos-duration="1000">
+                <div class="evento-img">
+                    <img src="materials/images/vacirock.png" alt="Evento 3">
+                </div>
+                <div class="evento-info">
+                    <h3>PRIMER VACIROCK</h3>
+                    <p>Fecha: Por confirmar</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <section id="mapa" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Ubicación</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.023507793587!2d-76.95277234999999!3d-12.0258973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c53e19fb34df%3A0x1ce4a11a75be7f3c!2sVacilandia%20Park!5e0!3m2!1ses-419!2spe!4v1687445234146!5m2!1ses-419!2spe"
+                width="1100" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <div id="contacto" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Contacto</h2>
+        <div class="contacto-container">
+            <div class="contacto-item">
+                <a href="">
+                    <div class="contacto-img" style="background-image: url(materials/images/slide2.jpg)">
+                        <div class="contacto-overlay">
+                            <div class="contacto-content">
+                                <span>Teléfono</span>
                             </div>
                         </div>
-                        <div class="types">
-                            <span style="color: rgb(255, 255, 255);" class="project-type">--</span>
-                            <span class="project-type">AGUA MARINA</span>
+                    </div>
+                </a>
+            </div>
+            <div class="contacto-item">
+                <a href="">
+                    <div class="contacto-img" style="background-image: url(materials/images/slide3.jpg)">
+                        <div class="contacto-overlay">
+                            <div class="contacto-content">
+                                <span>Correo</span>
+                            </div>
                         </div>
                     </div>
-                </article>
+                </a>
+            </div>
+            <div class="contacto-item">
+                <a href="">
+                    <div class="contacto-img" style="background-image: url(materials/images/slide5.jpg)">
+                        <div class="contacto-overlay">
+                            <div class="contacto-content">
+                                <span>Formulario</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="container">
-        <h2 class="text-center card-title" id="title-2">PLANIFICA TU VISITA</h2>
-    </div>
-    <div class="container" id="special-container">
-        <div class="row">
-            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center" id="map-container">
-                <h2 class="title">COMO LLEGAR <i class="fas fa-map-marker-alt"></i></h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.2919496082573!2d-76.94775142531013!3d-12.023410788211551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c53e19fb34df%3A0x1ce4a11a75be7f3c!2sVacilandia%20Park!5e0!3m2!1ses-419!2spe!4v1687037261711!5m2!1ses-419!2spe"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" width="500" height="450" style="border:0;"
-                    allowfullscreen="" loading="lazy"></iframe>
-                <p class="address">Av. Las Gaviotas con Av. El Rosal, Urb. Las Gardenias<br>Ref. a 5 minutos del Mercado
-                    Productores de Santa Anita</p>
-            </div>
-            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
-                <a href="https://wa.me/+51953210220"><button class="btn-contact">
-                    CONTÁCTANOS AQUI
-                </button></a>
-                <h2 class="title">ESTACIONAMIENTO GRATIS <i class="fa-sharp fa-solid fa-car-side"
-                        style="color: #ffffff;"></i></h2>
-            </div>
-        </div>
-    </div>
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <img src="../materials/logos/venconcierto.png" alt="Logo" class="logo">
+    <footer>
+        <div class="footer-bg">
+            <div class="footer-gradient"></div>
+            <div class="footer-content">
+                <div class="logo-container">
+                    <img src="materials/images/LOGO-VEC---NEGATIVO (1).png" alt="Logo">
                 </div>
-                <div class="col-sm-4 text-center">
-                    <h4 class="description">VACILANDIA EN CONCIERTO</h4>
-                    <p class="sub-description">¡Disfruta de la mejor música en vivo!</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <ul class="contact-info">
-                        <li><a href="mailto:venconcierto@vacilandia.com.pe"><i class="fas fa-envelope"></i>
-                                venconcierto@vacilandia.com.pe</li></a>
-                        <li><a href="https://wa.me/+51953210220"><i class="fas fa-phone"></i> +51 953 210 220</li></a>
-                        <li><a href="https://goo.gl/maps/hh83nB8W1XWBjCFo7"><i class="fas fa-map-marker-alt"></i> Av.
-                                Las Gaviotas con Av. El Rosal, Urb. Las Gardenias Ref- A 5min del mercado mayorista de
-                                Santa Anita</li></a>
-                    </ul>
+                <div class="social-media">
+                    <a href="https://wa.me/+51953210220"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@vacilandiaconcierto.pe"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/search/top?q=vacilandia%20en%20concierto"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/vacilandiaenconcierto/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p class="rights">Todos los derechos reservados &copy; 2023 Vacilanda en Concierto</p>
-                </div>
+            <div class="footer-bottom">
+                <p>Derechos y Copyright de Vacilandia Park&copy; 2023</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 
