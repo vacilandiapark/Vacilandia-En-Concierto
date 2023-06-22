@@ -155,3 +155,15 @@ particlesJS("particles-js", {
 });
 
 AOS.init();
+
+// JavaScript
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("navbar");
+    const toggleButton = document.querySelector(".toggle-button");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggleButton.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+});
