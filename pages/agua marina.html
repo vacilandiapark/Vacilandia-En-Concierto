@@ -8,11 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
-    <title>Vacilandia - Nueva Arena</title>
+    <title>Agua Marina - Vacilandia en Concierto</title>
     <link rel="stylesheet" href="../style/agua marina.css">
 </head>
 
@@ -30,9 +33,9 @@
             </button>
             <div class="nav-links">
                 <a href="../index.html#banner">Inicio</a>
-                <a href="../index.html">Cartelera</a>
-                <a href="../index.html">Contacto</a>
-                <a href="../index.html">Ubicación</a>
+                <a href="../index.html#cartelera">Cartelera</a>
+                <a href="../index.html#contacto">Contacto</a>
+                <a href="../index.html#mapa">Ubicación</a>
                 <a href="#">Servicios</a>
                 <a href="#">Galería</a>
             </div>
@@ -50,47 +53,63 @@
         <img src="../materials/images/banner.png" alt="Imagen">
         <div id="shadow-bottom"></div>
     </div>
-    <div class="container">
-        <h1>Zona y Precios</h1>
-
-        <!-- Sección de Zona y Ubicación -->
-        <section class="zone-section">
-            <img class="zone-image" src="../materials/images/mapa.png" alt="Zona y Ubicación">
-        </section>
-
-        <!-- Sección de Compra -->
-        <section class="purchase-section">
-            <h2 class="purchase-title">Título de la Compra</h2>
-            <p class="purchase-description">Descripción de la Compra</p>
-            <a href="https://teleticket.com.pe/agua-marina-y-deyvis-orosco-2023"><button
-                    class="purchase-button">Comprar</button></a>
-        </section>
-
-        <!-- Sección de Precios -->
-        <section class="pricing-section">
-            <table class="pricing-table">
-                <tr>
-                    <th>Descripción</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <td>General</td>
-                    <td>S/20.00</td>
-                </tr>
-                <tr>
-                    <td>VIP</td>
-                    <td>S/50.00</td>
-                </tr>
-                <tr>
-                    <td>Super VIP</td>
-                    <td>S/80.00</td>
-                <tr>
-                    <td>Box</td>
-                    <td>S/1,001.00</td>
-                </tr>
-            </table>
-        </section>
+    <div id="detalles">
+        <div class="container-details">
+            <div class="column">
+                <div class="proximo-evento">¡Próximo evento!</div>
+                <div class="fecha">09/JUL/23</div>
+                <div class="nombre-evento">AGUA MARINA Y DEYVIS OROSCO</div>
+                <div class="text-ticket">Comprar tickets</div>
+                <div class="button-container">
+                    <a href="https://teleticket.com.pe/agua-marina-y-deyvis-orosco-2023"><button class="comprar-tickets">TELETICKET</button></a>
+                    <a href="https://wa.me/+51953210220"><button class="comprar-tickets">TAQUILLA</button></a>
+                    <button class="comprar-tickets">VAOPE</button>
+                </div>
+                <p class="event-description">
+                    Vive una noche llena de cumbia con Agua Marina y Deyvis Orosco en 'Vacilandia en Concierto', el
+                    evento más esperado del 9 de julio en la nueva Arena de Lima. No te pierdas esta increíble
+                    experiencia en espacios General, Vip, Supervip y Box's. ¡Garantizamos diversión y baile sin parar!"
+                </p>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="../materials/images/mapa.png" alt="Imagen">
+                </div>
+                <table class="precio-table">
+                    <tr>
+                        <th>PRODUCTO</th>
+                        <th>PRECIO PREVENTA</th>
+                        <th>PRECIO REGULAR</th>
+                    </tr>
+                    <tr>
+                        <td><span class="color-square red"></span> GENERAL</td>
+                        <td>S/ 20.00</td>
+                        <td>S/ 50.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-square blue"></span> VIP</td>
+                        <td>S/ 50.00</td>
+                        <td>S/ 80.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-square green"></span> SUPERVIP</td>
+                        <td>S/ 80.00</td>
+                        <td>S/ 110.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-square yellow"></span> BOX (Completo)</td>
+                        <td>S/ 1001.00</td>
+                        <td>S/ 1200.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
+    <section class="video">
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/838713799" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
     <footer>
         <div class="footer-bg">
             <div class="footer-gradient"></div>
@@ -112,7 +131,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

@@ -137,6 +137,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.querySelector('.toggle-button').addEventListener('click', function () {
-    document.querySelector('.options').classList.toggle('show');
-});
+// IMAGE DETAILS //
