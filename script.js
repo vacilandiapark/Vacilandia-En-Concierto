@@ -7,50 +7,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Script para controlar el carrusel de imágenes
-// Script para controlar el carrusel de imágenes
-const carrusel = document.querySelector('.carrusel');
-const imagenes = document.querySelectorAll('.carrusel .imagen');
-const botonAnterior = document.querySelector('.carrusel .boton.anterior');
-const botonSiguiente = document.querySelector('.carrusel .boton.siguiente');
-let index = 0;
-
-// Función para mostrar la imagen siguiente
-function carruselSiguiente() {
-    index = (index + 1) % imagenes.length;
-    actualizarCarrusel();
-}
-
-// Función para mostrar la imagen anterior
-function carruselAnterior() {
-    index = (index - 1 + imagenes.length) % imagenes.length;
-    actualizarCarrusel();
-}
-
-// Función para actualizar el carrusel con la imagen actual
-function actualizarCarrusel() {
-    imagenes.forEach((imagen, i) => {
-        imagen.style.transform = `translateX(-${index * 100}%)`;
-        imagen.style.opacity = i === index ? 1 : 0;
-    });
-}
-
-// Función para mostrar la primera imagen al cargar la página
-function mostrarPrimeraImagen() {
-    imagenes[index].style.opacity = 1;
-}
-
-// Asignar eventos a los botones del carrusel
-botonAnterior.addEventListener('click', carruselAnterior);
-botonSiguiente.addEventListener('click', carruselSiguiente);
-
-// Mostrar la primera imagen al cargar la página
-mostrarPrimeraImagen();
-
-// Cambiar automáticamente cada 2 segundos
-setInterval(carruselSiguiente, 2000);
-
-
 // PARTICULAS //
 
 particlesJS("particles-js", {
@@ -179,3 +135,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// carrusel //
+
+// Script para controlar el carrusel de imágenes
+// Script para controlar el carrusel de imágenes
+const carrusel = document.querySelector('.carrusel');
+const imagenes = document.querySelectorAll('.carrusel .imagen');
+const botonAnterior = document.querySelector('.carrusel .boton.anterior');
+const botonSiguiente = document.querySelector('.carrusel .boton.siguiente');
+let index = 0;
+
+// Función para mostrar la imagen siguiente
+function carruselSiguiente() {
+    index = (index + 1) % imagenes.length;
+    actualizarCarrusel();
+}
+
+// Función para mostrar la imagen anterior
+function carruselAnterior() {
+    index = (index - 1 + imagenes.length) % imagenes.length;
+    actualizarCarrusel();
+}
+
+// Función para actualizar el carrusel con la imagen actual
+function actualizarCarrusel() {
+    imagenes.forEach((imagen, i) => {
+        imagen.style.transform = `translateX(-${index * 100}%)`;
+        imagen.style.opacity = i === index ? 1 : 0;
+    });
+}
+
+// Función para mostrar la primera imagen al cargar la página
+function mostrarPrimeraImagen() {
+    imagenes[index].style.opacity = 1;
+}
+
+// Asignar eventos a los botones del carrusel
+botonAnterior.addEventListener('click', carruselAnterior);
+botonSiguiente.addEventListener('click', carruselSiguiente);
+
+// Mostrar la primera imagen al cargar la página
+mostrarPrimeraImagen();
+
+// Cambiar automáticamente cada 2 segundos
+setInterval(carruselSiguiente, 2000);
