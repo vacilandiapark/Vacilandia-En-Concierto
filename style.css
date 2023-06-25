@@ -87,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     height: 23px;
 }
@@ -205,7 +205,7 @@ body {
 #introduccion {
     padding: 10px 20px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -331,7 +331,7 @@ body {
 /* CARTELERA */
 
 #cartelera {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 70px auto;
 }
 
@@ -445,7 +445,7 @@ body {
 }
 
 #mapa {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     height: 100%;
 }
@@ -476,7 +476,7 @@ body {
 /* CONTACTO */
 
 #contacto {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 70px auto;
 }
 
@@ -650,7 +650,7 @@ footer {
 /* YOUTUBE */
 
 .video {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
