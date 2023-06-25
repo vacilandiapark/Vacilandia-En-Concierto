@@ -110,8 +110,6 @@ particlesJS("particles-js", {
     retina_detect: true
 });
 
-AOS.init();
-
 document.addEventListener('DOMContentLoaded', () => {
     // Obtén los enlaces del navbar
     const navLinks = document.querySelectorAll('#navbar .nav-links a');
@@ -134,4 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});
+
+// hamburguesa //
+
+document.querySelector('.toggle-button').addEventListener('click', function () {
+    document.getElementById('navbar').classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
 });

@@ -19,7 +19,7 @@ body {
 #banner {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 #banner img {
@@ -70,7 +70,6 @@ body {
 #navbar {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     padding: 10px 20px;
     background-color: transparent;
@@ -85,6 +84,7 @@ body {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    height: 23px;
 }
 
 #navbar .logo img {
@@ -250,7 +250,7 @@ body {
     color: white;
     padding: 20px 20px;
     border: none;
-    width: 180px;
+    width: 30%;
     cursor: pointer;
     font-size: 15px;
     font-family: 'Oswald', sans-serif;

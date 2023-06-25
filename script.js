@@ -110,8 +110,6 @@ particlesJS("particles-js", {
     retina_detect: true
 });
 
-AOS.init();
-
 document.addEventListener('DOMContentLoaded', () => {
     // Obtén los enlaces del navbar
     const navLinks = document.querySelectorAll('#navbar .nav-links a');
@@ -180,3 +178,10 @@ mostrarPrimeraImagen();
 
 // Cambiar automáticamente cada 2 segundos
 setInterval(carruselSiguiente, 2000);
+
+/* HAMBURGUESA */
+
+document.querySelector('.toggle-button').addEventListener('click', function () {
+    document.getElementById('navbar').classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
+});
