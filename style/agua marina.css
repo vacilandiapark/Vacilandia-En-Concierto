@@ -221,8 +221,9 @@ body {
 .proximo-evento {
     background-color: gray;
     color: white;
-    width: 18%;
-    padding: 10px;
+    width: 19%;
+    font-size: 100%;
+    padding: 5px;
     margin-bottom: 5px;
     margin-top: 30px;
     display: inline;
