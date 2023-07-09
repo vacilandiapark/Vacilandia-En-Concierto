@@ -191,7 +191,7 @@ document.querySelector('.toggle-button').addEventListener('click', function () {
 // Configura ScrollReveal
 const sr = ScrollReveal({
     duration: 1000,
-    easing: 'ease-out',
+    easing: 'ease-in-out',
     reset: true,
 });
 
@@ -221,3 +221,26 @@ $(document).ready(function () {
         ]
     });
 });
+
+// galeria //
+
+var grid = document.querySelector('.grid');
+var masonry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    gutter: 10
+});
+
+function openModal(img) {
+    var modal = document.getElementById('modal');
+    var modalImage = modal.querySelector('img');
+
+    modal.style.display = 'flex';
+    modalImage.src = img.src;
+}
+
+function closeModal() {
+    var modal = document.getElementById('modal');
+
+    modal.style.display = 'none';
+}
