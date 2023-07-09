@@ -723,3 +723,77 @@ footer {
     height: auto;
     margin-top: 20px;
 }
+
+/* video promo */
+
+.videos-promo {
+    padding-top: 50px;
+}
+
+.videos-promo h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    border-bottom: 1px solid #746c6c;
+}
+
+.promo-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.promo-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.promo-carousel .video-box {
+    width: 400px;
+    height: auto;
+}
+
+.promo-carousel .slick-slide {
+    height: auto;
+    margin: 0 10px;
+}
+
+.promo-carousel .slick-prev,
+.promo-carousel .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.promo-carousel .slick-prev {
+    left: 0;
+}
+
+.promo-carousel .slick-next {
+    right: 0;
+}
+
+.promo-carousel video {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .promo-carousel {
+        justify-content: flex-start;
+    }
+
+    .promo-carousel .video-box {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

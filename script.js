@@ -201,3 +201,23 @@ sr.reveal('.bloque', {
     opacity: 0, // Configura la opacidad inicial en 0 para el efecto de fade-in
     interval: 200, // Intervalo de tiempo entre la aparición de cada bloque
 });
+
+// video promo //
+
+$(document).ready(function () {
+    $('.promo-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        prevArrow: '<div class="slick-prev"><</div>',
+        nextArrow: '<div class="slick-next">></div>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
