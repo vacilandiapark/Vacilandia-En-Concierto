@@ -186,22 +186,6 @@ document.querySelector('.toggle-button').addEventListener('click', function () {
     document.querySelector('.nav-links').classList.toggle('active');
 });
 
-// scroll reveal //
-
-// Configura ScrollReveal
-const sr = ScrollReveal({
-    duration: 1000,
-    easing: 'ease-in-out',
-    reset: true,
-});
-
-// Aplica el efecto de "fade-in" a los bloques
-sr.reveal('.bloque', {
-    origin: 'bottom',
-    opacity: 0, // Configura la opacidad inicial en 0 para el efecto de fade-in
-    interval: 200, // Intervalo de tiempo entre la aparición de cada bloque
-});
-
 // video promo //
 
 $(document).ready(function () {
