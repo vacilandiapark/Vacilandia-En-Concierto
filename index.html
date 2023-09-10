@@ -1,236 +1,536 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Somos el parque campestre mas grande de todo Lima, contamos con piscinas y toboganes, áreas verdes, juegos, conciertos, restaurante, divertidos juegos en familia y sobre todo un espacio de más de 90000m2 para que nos podamos divertir a lo grande!.">
+    <meta name="author" content="ZeyN">
     <meta name="keywords"
         content="piscinas, restaurante, campestre, conciertos, toboganes, pollo, canchas, parque acuatico, parque de diversiones, eventos corporativos, promociones de colegio, reserva de espacios">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacilandia en Concierto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="icon" href="materials/Concierto/venconcierto.png">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
-    <title>Vacilandia en Concierto - Nueva Arena</title>
-    <link rel="canonical" href="https://vecarena.com.pe/">
+    <link rel="canonical" href="https://vacilandia.com.pe/">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../materials/images/venconcierto.png">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5ZFJ7QK5');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
-<body>
-    <div id="particles-js"></div>
-    <div id="navbar">
-        <div class="container">
-            <div class="logo">
-                <img decoding="async" loading="lazy" decoding="async" loading="lazy"
-                    src="materials/images/venconcierto.png" alt="Logo">
+<body id="concierto">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZFJ7QK5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Contenedor del botón de WhatsApp -->
+    <div id="whatsapp-button">
+        <div id="whatsapp-chat">
+            <div id="whatsapp-header">
+                <div id="whatsapp-avatar">
+                    <img decoding="async" src="materials/Concierto/274996682_108713358421596_5386262468476296445_n.jpg"
+                        alt="Avatar">
+                </div>
+                <div id="whatsapp-title">Vacilandia Park <i class="fa-solid fa-circle-check"
+                        style="color: #00ff33;"></i></div>
+                <button id="whatsapp-close">&times;</button>
             </div>
-            <button class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <div class="nav-links">
-                <a href="#banner">Inicio</a>
-                <a href="#cartelera">Cartelera</a>
-                <a href="#contacto">Contacto</a>
-                <a href="#mapa">Ubicación</a>
-                <a href="/pages/servicios.html">Servicios</a>
-                <a href="#">Galería</a>
+            <div id="whatsapp-messages">
+                <div class="message received">
+                    <span class="bubble">Hola, ¿en qué puedo ayudarte?</span>
+                </div>
+                <div class="message sent">
+                    <span class="bubble">Hola, tengo una pregunta sobre...</span>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/search/top?q=vacilandia%20en%20concierto"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://www.tiktok.com/@vacilandiaconcierto.pe"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.instagram.com/vacilandiaenconcierto/"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/+51953210220"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.youtube.com/@VECARENA"><i class="fab fa-youtube"></i></a>
+            <div id="whatsapp-input">
+                <input type="text" id="whatsapp-message-input" placeholder="Escribe tu mensaje...">
+                <button id="whatsapp-send">Enviar</button>
             </div>
+        </div>
+        <div id="whatsapp-icon">
+            <img decoding="async" src="materials/Concierto/124034.png" alt="WhatsApp">
         </div>
     </div>
-    <div id="banner">
-        <img decoding="async" loading="lazy" src="materials/images/slide2.jpg" alt="Imagen">
-        <div id="shadow-bottom"></div>
-        <div id="logo">
-            <img decoding="async" loading="lazy" src="materials/images/venconcierto.png" alt="Logo">
-        </div>
-        <div id="tagline">
-            <p>La nueva arena de Lima</p>
+    <!-- SUBNAVBAR -->
+    <nav class="subnavbar">
+        <a href="#" title="Contacto" onclick="toggleInfo('telefono')"><i class="fa-solid fa-phone"></i><br>Contacto</a>
+        <a href="Page-Not-Found.html" target="_blank" title="Mapa"><i class="fa-solid fa-map"></i><br>Mapa</a>
+        <a href="#" title="Preguntas Frecuentes" onclick="toggleInfo('faqs')"><i
+                class="fa-solid fa-question"></i><br>FAQS</a>
+        <a href="https://vacilandia.com.pe/" target="_blank"><img decoding="async" loading="lazy"
+                src="materials/Concierto/LOGO VACILANDIA FINAL.png" title="Vacilandia Park" alt="logo-concert"></a>
+        <!-- Agrega máss según tus necesidades -->
+    </nav>
+    <!-- CONTENEDOR DE INFORMACIÓN -->
+    <div class="info-container" id="info-faqs">
+        <span class="close-btn" onclick="closeInfoContainer('faqs')"><i class="fa-solid fa-x"></i></span>
+        <div class="text">
+            <i class="fa-solid fa-question"></i>
+            <section class="faq-section">
+                <div class="container">
+                    <h2>PREGUNTAS FRECUENTES</h2>
+                    <div class="faq-list">
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿Cuentan con estacionamiento? ¿Tiene algún costo?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    Si contamos con estacionamiento amplio y es gratis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿Se puede llevar comida al parque?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    No está permitido el ingreso de comida al parque a excepsión de alimentos para
+                                    bebes, como papillas, leche y tortas de cumpleaños.
+                                    Dentro del parque tenemos una variedad de productos de market y una amplia carta
+                                    gastronómica.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿Funcionan las piscinas?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    Si, en días de Concierto se apertura las 3 piscinas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿A que edad no se paga la entrada?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    Niños menores a 4 años y adultos mayores a 64 años ingresan gratis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿Si salgo del parque puedo ingresar?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    No esta permitido el ingreso una vez se sale del parque.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿Puedo ingresar con mi mascota?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    No está permitido el ingreso de mascotas al parque.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿Puedo llevar flotadores, sillas y carpas?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    No está permitido el ingreso de sillas y carpas, a excepsión de los flotadores donde
+                                    solo se puede ingresar si son pequeños para los brazos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item closed">
+                            <div class="question">
+                                <i class="fa-solid fa-caret-right"></i>¿Solo puedo ingresar con ropa de baño a las
+                                piscinas?
+                            </div>
+                            <div class="answer-wrapper">
+                                <div class="answer">
+                                    Si, solo se puede ingresar con ropa de baño, no está permitido el uso de prendas no
+                                    aptas para el agua.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Agregar más preguntas y respuestas aquí -->
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-    <div id="introduccion">
-        <div class="columna">
-            <div class="carrusel">
-                <div class="imagenes">
-                    <img decoding="async" loading="lazy" class="imagen active" src="materials/images/slide2.jpg"
-                        alt="Imagen 1">
-                    <img decoding="async" loading="lazy" class="imagen" src="materials/images/slide3.jpg"
-                        alt="Imagen 2">
-                    <img decoding="async" loading="lazy" class="imagen" src="materials/images/slide5.jpg"
-                        alt="Imagen 3">
-                </div>
-                <div class="boton anterior" onclick="carruselAnterior()">&#10094;</div>
-                <div class="boton siguiente" onclick="carruselSiguiente()">&#10095;</div>
-            </div>
-        </div>
-        <div class="columna" id="cuadro-blanco">
-            <div class="contenido">
-                <h2>Vacilandia en Concierto</h2>
-                <p>La nueva arena de Lima</p>
-                <p class="resumen">¡Disfruta de un espectáculo inolvidable en la nueva arena de Lima! Vive la emoción de
-                    la música en vivo, los artistas más destacados y una experiencia única llena de diversión y
-                    entretenimiento.</p>
-                <p class="anio">2023</p>
-            </div>
-        </div>
-    </div>
-    <div id="cartelera">
-        <h2>Cartelera de eventos</h2>
-        <div class="eventos-container">
-            <!--<a href="pages/agua marina.html" class="evento">
-                <div class="evento-img decoding="async" loading="lazy"">
-                    <img decoding="async" loading="lazy" src="materials/images/aguamarina.jpg" alt="Evento 1">
-                </div>
-                <div class="evento-info">
-                    <h3>AGUA MARINA Y DEYVIS OROSCO</h3>
-                    <p>Fecha: 09 de julio</p>
-                </div>
-            </a>-->
-            <!--
-            <a href="pages/daniela darcourt.html" class="evento">
-                <div class="evento-img decoding=" async" loading="lazy"">
-                    <img decoding=" async" loading="lazy" src="materials/images/danieladarcourt.jpg" alt="Evento 2">
-                </div>
-                <div class="evento-info">
-                    <h3>DANIELA DARCOURT</h3>
-                    <p>Fecha: 22 de julio</p>
-                </div>
+    <div class="info-container" id="info-telefono">
+        <span class="close-btn" onclick="closeInfoContainer('telefono')"><i class="fa-solid fa-x"></i></span>
+        <div class="text">
+            <i class="fa-solid fa-phone"></i>
+            <h1>ESTAMOS PARA TUS DUDAS</h1>
+            <h2>CONTACTO</h2>
+            <h1>Para informes</h1>
+            <a target="_blank" href="http://wa.me/+51913479416">
+                <p>+51 913 479 416</p>
             </a>
-            <a href="pagina-evento3.html" class="evento">
-                <div class="evento-img decoding=" async" loading="lazy"">
-                    <img decoding=" async" loading="lazy" src="materials/images/vacirock.jpg" alt="Evento 3">
-                </div>
-                <div class="evento-info">
-                    <h3>PRIMER VACIROCK</h3>
-                    <p>Fecha: Por confirmar</p>
-                </div>
-            </a>-->
+            <a href="mailto:informes@vacilandia.com.pe">
+                <p>informes@vacilandia.com.pe</p>
+            </a>
+            <h1>Para conciertos</h1>
+            <a target="_blank" href="http://wa.me/+51953210220">
+                <p>+51 953 210 220</p>
+            </a>
+            <a href="mailto:venconcierto@vacilandia.com.pe">
+                <p>venconcierto@vacilandia.com.pe</p>
+            </a>
+            <h1 style="margin-top: 40px;">Puedes usar el formulario:</h1>
+        </div>
+        <div class="buttons">
+            <a target="_blank" href="https://vacilandia-park.odoo.com/contactus"><button>IR AL FORMULARIO</button></a>
         </div>
     </div>
-    <!--    <section class="video bloque">
-        <div class="video-container">
-            <iframe src="https://player.vimeo.com/video/838713799" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>-->
-    <div id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-container">
-            <div class="contacto-item">
-                <a href="https://wa.me/+51953210220">
-                    <div class="contacto-img decoding=" async" loading="lazy"" style=" background-image:
-                        url(materials/images/slide2.jpg)">
-                        <div class="contacto-overlay">
-                            <div class="contacto-content">
-                                <span>Teléfono</span>
-                            </div>
+    <div class="main">
+        <!-- NAVBAR VACILANDIA -->
+        <div class="navbar" id="myNavbar">
+            <div class="row-1">
+                <div class="container">
+                    <div class="navigation-container">
+                        <a href="/"><img decoding="async" src="materials/Concierto/venconcierto.png" id="logo" alt="Logo"
+                                class="logo" loading="lazy"></a>
+                        <ul class="navigation">
+                            <li><a href="#introduccion">INTRODUCCIÓN</a>
+                            </li>
+                            <li><a href="#cartelera">CARTELERA</a>
+                            </li>
+                            <li><a href="#ofrecer">SERVICIOS</a>
+                            </li>
+                            <li><a href="#ubicacion">¿CÓMO LLEGAR?</a></li>
+                            <li><a href="#">GALERÍA</a>
+                            </li>
+                            <li><a href="#" onclick="toggleInfo('telefono')">Contáctanos</a></li>
+                        </ul>
+                        <div class="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="social-icons">
+                            <a target="_blank" href="https://www.tiktok.com/@vacilandiaconcierto.pe"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/vacilandiaenconcierto/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Vacilandiaenconcierto"><i
+                                    class="fa-brands fa-facebook"></i></a>
                         </div>
                     </div>
-                </a>
+                    <a href="https://vaope.com/parque-acuatico/vacilandia-park" target="_blank"><button
+                            class="btn animate__animated animate__headShake animate__infinite">COMPRAR
+                            TICKETS</button></a>
+                </div>
             </div>
-            <div class="contacto-item">
-                <a href="mailto:venconcierto@vacilandia.com.pe">
-                    <div class="contacto-img decoding=" async" loading="lazy"" style=" background-image:
-                        url(materials/images/slide3.jpg)">
-                        <div class="contacto-overlay">
-                            <div class="contacto-content">
-                                <span>Correo</span>
+        </div>
+        <div id="menuPanel">
+            <div class="close-button"><i class="fa-solid fa-x"></i></div>
+            <ul class="panel-navigation">
+                <section class="sub-section">
+                    <div class="container">
+                        <div class="sub-list">
+                            <div class="sub-item closed">
+                                <a href="#introduccion">
+                                    <div class="sub-question">INTRODUCCIÓN
+                                    </div>
+                                </a>
                             </div>
+                            <div class="sub-item closed">
+                                <a href="#cartelera">
+                                    <div class="sub-question">CARTELERA
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sub-item closed">
+                                <a href="#ofrecer">
+                                    <div class="sub-question">PLANIFICAR
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sub-item closed">
+                                <a href="#ubicacion">
+                                    <div class="sub-question">¿CÓMO LLEGAR?
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sub-item closed">
+                                <a href="#">
+                                    <div class="sub-question">GALERÍA
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Agregar más preguntas y respuestas aquí -->
                         </div>
                     </div>
-                </a>
+                </section>
+            </ul>
+        </div>
+        <div id="banner-concert">
+            <img decoding="async" loading="lazy" src="materials/Concierto/slide2-min.jpg" alt="Imagen">
+            <div id="shadow-bottom"></div>
+            <div id="logo">
+                <img decoding="async" loading="lazy" src="materials/Concierto/venconcierto.png" alt="Logo">
             </div>
-            <div class="contacto-item">
-                <a href="">
-                    <div class="contacto-img decoding=" async" loading="lazy"" style=" background-image:
-                        url(materials/images/slide5.jpg)">
-                        <div class="contacto-overlay">
-                            <div class="contacto-content">
-                                <span>Opiniones</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+            <div id="tagline">
+                <p>La nueva arena de Lima</p>
             </div>
         </div>
-    </div>
-    <section id="mapa">
-        <h2>Ubicación</h2>
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.023507793587!2d-76.95277234999999!3d-12.0258973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c53e19fb34df%3A0x1ce4a11a75be7f3c!2sVacilandia%20Park!5e0!3m2!1ses-419!2spe!4v1687445234146!5m2!1ses-419!2spe"
-                width="1100" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-    <!--
-    <section class="videos-promo">
-        <div class="promo-container">
-            <h1>Video Promociones</h1>
-            <div class="promo-carousel">
-                <div class="video-box">
-                    <video src="videos/357102500_295196546310638_1703203258002865013_n.mp4" controls autoplay loop
-                        muted></video>
-                </div>
-                <div class="video-box">
-                    <video src="videos/WhatsApp Video 2023-07-09 at 9.12.54 AM.mp4" controls autoplay loop
-                        muted></video>
-                </div>
-                <div class="video-box">
-                    <video src="videos/WhatsApp Video 2023-07-09 at 9.13.12 AM.mp4" controls autoplay loop
-                        muted></video>
-                </div>
-                <div class="video-box">
-                    <video src="videos/WhatsApp Video 2023-07-09 at 9.13.26 AM.mp4" controls autoplay loop
-                        muted></video>
-                </div>
-                <div class="video-box">
-                    <video src="videos/358360963_236623059176702_940833165869507088_n.mp4" controls autoplay loop
-                        muted></video>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <footer>
-        <div class="footer-bg">
-            <div class="footer-gradient"></div>
-            <div class="footer-content">
-                <div class="logo-container">
-                    <img decoding="async" loading="lazy" src="materials/images/LOGO-VEC---NEGATIVO (1).png" alt="Logo">
-                </div>
-                <div class="social-media">
-                    <a href="https://wa.me/+51953210220"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.tiktok.com/@vacilandiaconcierto.pe"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.facebook.com/search/top?q=vacilandia%20en%20concierto"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/vacilandiaenconcierto/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@VECARENA"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Derechos y Copyright de Vacilandia Park&copy; 2023</p>
-            </div>
-        </div>
-    </footer>
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+            <div id="particles-js"></div>
+            <!--INTRODUCCIÓN -->
+            <section class="introduccion" id="introduccion">
+                <div class="container">
+                    <div class="columna-1">
+                        <div class="contenido">
+                            <h2>VACILANDIA EN CONCIERTO, ¡LA NUEVA ARENA DE LIMA!</h2>
+                            <p>¡Disfruta de un espectáculo inolvidable en la nueva arena de Lima! Vive la emoción de la
+                                música en vivo, los artistas más destacados y una experiencia única llena de diversión y
+                                entretenimiento. <br> 2023</p>
+                        </div>
+                    </div>
+                    <div class="columna-2">
+                        <div class="carrusel">
+                            <img decoding="async" src="materials/Concierto/slide3-min.jpg" alt="Imagen 1"
+                                loading="lazy" />
+                            <img decoding="async" src="materials/Concierto/slide5-min.jpg" alt="Imagen 2"
+                                loading="lazy" />
+                            <img decoding="async" src="materials/Concierto/slide2-min.jpg" alt="Imagen 3"
+                                loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--CARTELERA-->
+            <div id="cartelera">
+                <h2>Cartelera de eventos</h2>
+                <div class="eventos-container">
+                    <a href="#" class="evento">
+                        <div class="evento-img decoding=" async" loading="lazy"">
+                  <img decoding=" async" loading="lazy"
+                            src="https://images.unsplash.com/photo-1604662941425-9642752c5c14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1377&q=80"
+                            alt="Evento 1">
+                        </div>
+                        <div class="evento-info">
+                            <h3>PROXIMAMENTE</h3>
+                            <p>Fecha: Por confirmar</p>
+                        </div>
+                    </a>
+                    <a href="#" class="evento">
+                        <div class="evento-img decoding=" async" loading="lazy"">
+                  <img decoding=" async" loading="lazy"
+                            src="https://images.unsplash.com/photo-1604662941425-9642752c5c14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1377&q=80"
+                            alt="Evento 2">
+                        </div>
+                        <div class="evento-info">
+                            <h3>PROXIMAMENTE</h3>
+                            <p>Fecha: Por confirmar</p>
+                        </div>
+                    </a>
+                    <a href="#" class="evento">
+                        <div class="evento-img decoding=" async" loading="lazy"">
+                  <img decoding=" async" loading="lazy"
+                            src="https://images.unsplash.com/photo-1604662941425-9642752c5c14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1377&q=80"
+                            alt="Evento 3">
+                        </div>
+                        <div class="evento-info">
+                            <h3>PROXIMAMENTE</h3>
+                            <p>Fecha: Por confirmar</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- QUE OFRECEMOS -->
+            <section class="ofrecer" id="ofrecer">
+                <div class="container">
+                    <div class="title">
+                        <h1>NUESTROS SERVICIOS</h1>
+                    </div>
+                    <div class="gradient-left"></div>
+                    <div class="gradient-right"></div>
+                    <div class="carousel-ofrecer">
+                        <div class="card">
+                            <div class="image">
+                                <div class="overlay"></div> <!-- Div para el gradiente -->
+                                <img decoding="async" loading="lazy" src="materials/Concierto/RC1-min.png" alt="">
+                                <div class="text">RINCÓN CHELERO</div> <!-- Div para el texto centrado -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <div class="overlay"></div> <!-- Div para el gradiente -->
+                                <img decoding="async" loading="lazy" src="materials/Concierto/PVIP2-min.JPG" alt="">
+                                <div class="text">PULSERAS</div> <!-- Div para el texto centrado -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <div class="overlay"></div> <!-- Div para el gradiente -->
+                                <img decoding="async" loading="lazy" src="materials/Concierto/BÑ1-min.jpg" alt="">
+                                <div class="text">BAÑOS ACCESIBLES</div> <!-- Div para el texto centrado -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <div class="overlay"></div> <!-- Div para el gradiente -->
+                                <img decoding="async" loading="lazy" src="materials/Concierto/FOOD1-min.JPG" alt="">
+                                <div class="text">FAST FOOD</div> <!-- Div para el texto centrado -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <div class="overlay"></div> <!-- Div para el gradiente -->
+                                <img decoding="async" loading="lazy" src="materials/Concierto/QSC1-min.JPG" alt="">
+                                <div class="text">KIOSKOS</div> <!-- Div para el texto centrado -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--MAPA-->
+            <section class="mapa" id="ubicacion">
+                <div class="contenedor">
+                    <h1>CONOCE NUESTRA UBICACIÓN</h1>
+                    <div class="mapa-iframe">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.78627256788957!2d-76.94516822789551!3d-12.02353274283072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5013b4f1afb%3A0xfde1285433814a65!2sVacilandia%20en%20Concierto!5e0!3m2!1ses-419!2spe!4v1694376958045!5m2!1ses-419!2spe"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="rectangulo">
+                        <h2>UBICACIÓN</h2>
+                        <p>Av. Las Gaviotas con Av. El Rosal, Urb. Las Gardenias Ref- A 5 min del Mercado Mayorista de
+                            Santa Anita
+                            15011
+                            Lima, Perú</p>
+                    </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer>
+                <div class="container">
+                    <div class="col">
+                        <h1>EXPLORAR</h1>
+                        <ul class="footer_explorar">
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Zona_Gamer.html">Zona Gamer</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Barcilón.html">Barcilón</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Restaurante.html">Restaurante</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Canchas.html">Canchas</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Granja.html">VaciGranja</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Page-Not-Found.html">Recorrido
+                                    Vacilón</a>
+                            </li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Piscinas.html">Piscinas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>PLANIFICAR</h1>
+                        <ul class="planificar_footer">
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Cumpleaños_y_Espacios.html">Cumpleaños y
+                                    Espacios</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Eventos_y_Reservas.html">Eventos y
+                                    Reservas</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Alquiler_y_Campeonatos.html">Alquiler y
+                                    Campeonatos</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Colegios_e_Instituciones.html">Colegios
+                                    e
+                                    Instituciones</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a
+                                    href="Corporativos_y_Empresas.html">Corporativos y
+                                    Empresas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>MÁS</h1>
+                        <ul class="planificar_footer">
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Page-Not-Found.html">Libro de
+                                    Reclamaciones</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Page-Not-Found.html">Trabaja con
+                                    nosotros</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contáctanos</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Preguntas_Frecuentes.html">Preguntas
+                                    Frecuentes</a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i><a href="Términos_y_Condiciones.html">Términos y
+                                    Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img decoding="async" loading="lazy" src="materials/Concierto/LOGO-VEC---NEGATIVO (1).png"
+                            alt="logo">
+                        <div class="social-icons">
+                            <a target="_blank" href="https://www.tiktok.com/@vacilandiaconcierto.pe"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/vacilandiaenconcierto/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Vacilandiaenconcierto"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="botones">
+                            <a
+                                href="https://api.whatsapp.com/send/?phone=%2B51913479416&text&type=phone_number&app_absent=0"><button>WHATSAPP</button></a>
+                            <a href="mailto:informes@vacilandia.com.pe"><button>CORREO</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="terms">
+                    <div class="text">
+                        <h1>Desarrollado por <a class="rainbow-text" target="_blank"
+                                href="https://www.linkedin.com/in/michael-de-la-cruz-2784951a9/">ZeyN</a> | <a
+                                href="Términos_y_Condiciones.html">Términos y
+                                condiciones</a> | <a href="Preguntas_Frecuentes.html">Preguntas frecuentes</a> | <a
+                                href="Page-Not-Found.html">Libro de
+                                reclamaciones <i class="fa-solid fa-book-open" style="color: #ffffff;"></i></a>
+                            | © 2023 Vacilandia Park. Todos los derechos reservados.</h1>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/f8eb9b1ffa.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBGSZKJ2VC"></script>
+        <script async src="https://cse.google.com/cse.js?cx=80a4c0cc5b3294b74">
+        </script>
+        <script src="scripts.js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-MBGSZKJ2VC');
+
+            verificarEstadoHorario(10, 17, [0, 3, 6]);
+        </script>
 </body>
 
-<
+</html>
