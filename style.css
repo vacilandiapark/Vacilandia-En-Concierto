@@ -3248,7 +3248,7 @@ body#restaurante .explorar img {
 .faq-section h2 {
     font-size: 40px;
     font-family: var(--font-primario);
-    color: var(--color-title);
+    color: var(--color-primario);
     font-weight: lighter;
 }
 
@@ -3281,7 +3281,7 @@ body#restaurante .explorar img {
     font-size: var(--size-title);
     font-family: var(--font-terciario);
     font-weight: bolder;
-    color: var(--color-title);
+    color: var(--color-primario);
     padding: 20px;
     cursor: pointer;
     transition: color 0.3s ease;
