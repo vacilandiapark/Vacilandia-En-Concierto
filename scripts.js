@@ -145,7 +145,7 @@ function toggleChat() {
 
 // Función para enviar el mensaje a WhatsApp
 function sendMessage() {
-    const phoneNumber = '+51913479416'; // Reemplaza con tu número de teléfono
+    const phoneNumber = '+51953210220'; // Reemplaza con tu número de teléfono
     const message = messageInput.value;
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
