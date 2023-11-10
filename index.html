@@ -24,13 +24,13 @@
     <link rel="canonical" href="https://vecarena.com.pe/">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://www.vacilandia.com.pe/copy.css">
+    <link rel="stylesheet" href="https://www.vacilandia.com.pe/style.css">
 </head>
 
-<body data-barba="wrapper" id="venconcierto" style="background: var(--primary-concierto);">
+<body data-barba="wrapper" id="concierto">
 
 
-    <div class="load-container">
+    <div class="contenedor_informacion">
         <div class="loading-screen">
             <img src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Logos/venconcierto_h08irj.png"
                 alt="Imagen de carga" class="loading-image">
@@ -40,7 +40,7 @@
     <div class="all" data-barba="container" data-barba-namespace="concierto-section">
 
         <a href="https://api.whatsapp.com/send/?phone=%2B51913479416&text&type=phone_number&app_absent=0">
-            <div id="whatsapp-button">
+            <div id="boton_de_whatsapp">
                 <div id="whatsapp-icon">
                     <img decoding="async"
                         src="https://static-00.iconduck.com/assets.00/whatsapp-icon-512x512-8q344er8.png"
@@ -49,7 +49,7 @@
             </div>
         </a>
 
-        <nav class="subnavbar" style="background: var(--secundary-concierto);">
+        <nav class="barra_vertical" id="concierto">
             <div class="container">
                 <div class="item" title="Inicio">
                     <a href="/">
@@ -114,7 +114,7 @@
                 </div>
                 <div class="item" title="Reproducir música">
                     <!-- Contenedor de la tarjeta -->
-                    <div id="music-card">
+                    <div id="boton_de_musica">
                         <!-- Botón de reproducción de música -->
                         <div id="play-button" onclick="playMusic()">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headphones"
@@ -145,7 +145,7 @@
             </div>
         </nav>
 
-        <div class="info-container info-1">
+        <div class="contenedor_informacion info-1">
             <button class="close-button" onclick="closeInfo(1)">X</button>
             <div class="content">
                 <h1>HORARIOS DISPONIBLES</h1>
@@ -167,7 +167,7 @@
             </div>
         </div>
 
-        <div class="info-container info-2">
+        <div class="contenedor_informacion info-2">
             <button class="close-button" onclick="closeInfo(2)">X</button>
             <div class="content">
                 <h1>INTERACTÚA CON NUESTRO MAPA</h1>
@@ -181,11 +181,11 @@
             </div>
         </div>
 
-        <div class="info-container info-3">
+        <div class="contenedor_informacion info-3">
             <button class="close-button" onclick="closeInfo(3)">X</button>
             <div class="content">
                 <h1>PREGUNTAS Y RESPUESTAS</h1>
-                <section class="faq-section" style="padding: 0;">
+                <section class="preguntas_y_respuestas" style="padding: 0;">
                     <div class="container" style="padding: 0;">
                         <div class="faq-list" style="padding: 0;">
                             <div class="faq-item closed">
@@ -317,7 +317,7 @@
             </div>
         </div>
 
-        <div class="info-container info-4">
+        <div class="contenedor_informacion info-4">
             <button class="close-button" onclick="closeInfo(4)">X</button>
             <div class="content">
                 <h1>COMPRAR TICKETS</h1>
@@ -336,18 +336,18 @@
 
             <!--NAVBAR-->
 
-            <nav class="navbar">
+            <nav class="navegacion_principal" id="concierto">
                 <div class="row-gradient"></div>
-                <div class="row" style="background: var(--secundary-concierto);">
+                <div class="row">
                     <div class="logo" id="venconcierto_logo">
                         <a href="/"><img decoding="async" loading="lazy"
                                 src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_300/q_auto/f_auto/v1/Materials/Logos/venconcierto_h08irj.png"
                                 alt=""></a>
                     </div>
                     <ul class="navigation">
-                        <li><a style="color: rgba(var(--rgba-blanco));"
+                        <li><a
                                 href="https://www.vacilandia.com.pe/Nosotros.html">NOSOTROS</a></li>
-                        <li><a style="color: rgba(var(--rgba-blanco));" href="#">ATRACCIONES<i
+                        <li><a href="#">ATRACCIONES<i
                                     class="fa-solid fa-caret-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="https://www.vacilandia.com.pe/Piscinas-y-Toboganes.html">PISCINAS Y
@@ -358,7 +358,7 @@
                                         DEPORTIVAS</a></li>
                             </ul>
                         </li>
-                        <li><a style="color: rgba(var(--rgba-blanco));" href="#">ENTRETENIMIENTO<i
+                        <li><a href="#">ENTRETENIMIENTO<i
                                     class="fa-solid fa-caret-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="https://www.vacilandia.com.pe/Recorrido-Ecológico.html">RECORRIDO
@@ -372,7 +372,7 @@
                                 <li><a href="https://www.vacilandia.com.pe/Shows-en-Vivo.html">SHOWS EN VIVO</a></li>
                             </ul>
                         </li>
-                        <li><a style="color: rgba(var(--rgba-blanco));" href="#">GASTRONOMÍA<i
+                        <li><a href="#">GASTRONOMÍA<i
                                     class="fa-solid fa-caret-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="https://www.vacilandia.com.pe/Restaurante.html">RESTAURANTE</a></li>
@@ -380,7 +380,7 @@
                                 <li><a href="https://www.vacilandia.com.pe/Rincón-Chelero.html">RINCÓN CHELERO</a></li>
                             </ul>
                         </li>
-                        <li><a style="color: rgba(var(--rgba-blanco));" href="#">SERVICIOS<i
+                        <li><a href="#">SERVICIOS<i
                                     class="fa-solid fa-caret-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="https://www.vacilandia.com.pe/Eventos-Corporativos.html">EVENTOS
@@ -395,20 +395,20 @@
                                         PUBLICITARIOS</a></li>
                             </ul>
                         </li>
-                        <li><a style="color: rgba(var(--rgba-blanco));"
+                        <li><a 
                                 href="https://vacilandia-park.odoo.com/contactus">CONTÁCTENOS</a></li>
                     </ul>
                     <div class="icons">
                         <a target="_blank" href="https://www.facebook.com/vacilandiapark"><i
-                                style="color: rgba(var(--rgba-blanco));" class="fa-brands fa-facebook"></i></a>
+                                class="fa-brands fa-facebook"></i></a>
                         <a target="_blank" href="https://www.instagram.com/vacilandiapark/?hl=es"><i
-                                style="color: rgba(var(--rgba-blanco));" class="fa-brands fa-instagram"></i></a>
+                                class="fa-brands fa-instagram"></i></a>
                         <a target="_blank" href="https://www.tiktok.com/@vacilandiapark"><i
-                                style="color: rgba(var(--rgba-blanco));" class="fa-brands fa-tiktok"></i></a>
+                                class="fa-brands fa-tiktok"></i></a>
                         <a target="_blank" href="https://www.youtube.com/@vacilandiapark8512/videos"><i
-                                style="color: rgba(var(--rgba-blanco));" class="fa-brands fa-youtube"></i></a>
+                                class="fa-brands fa-youtube"></i></a>
                         <a target="_blank" href="https://www.linkedin.com/company/vacilandia-park/mycompany/"><i
-                                style="color: rgba(var(--rgba-blanco));" class="fa-brands fa-linkedin"></i></a>
+                                class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <div class="buttons">
                         <div class="dropdown">
@@ -429,7 +429,7 @@
 
 
             <!--SUBNAVBAR-->
-            <div id="menuPanel">
+            <div id="responsive_navegacion">
                 <div class="close-button"><i class="fa-solid fa-x"></i></div>
                 <ul class="panel-navigation">
                     <section class="faq-section" id="nav-responsive" style="padding: 0;">
@@ -529,28 +529,40 @@
                 </ul>
             </div>
 
-            <div class="banner">
-                <img decoding="async" loading="lazy"
-                    src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/f_auto/q_auto/Materials/Concierto/banner/VCLNDIA_IMG_2959_bizjm2.jpg"
-                    alt="">
-                <div class="overlay">
-                    <img class="logo-banner" decoding="async" loading="lazy"
-                        src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_300/q_auto/f_auto/v1/Materials/Logos/venconcierto_h08irj.png"
-                        alt="">
-                    <h1>VACILANDIA EN CONCIERTO</h1>
-                    <h1>¡LA NUEVA ARENA DE LIMA!</h1>
-                </div>
-            </div>
+
+            <!--PROMOS-->
+            <section class="banner_principal">
+                <swiper-container class="articulo" space-between="15" pagination-clickable="true" navigation="true"
+                    autoplay-delay="3000" autoplay-disable-on-interaction="true" pagination="true" keyboard="true">
+                    <swiper-slide>
+                        <a href="https://www.vacilandia.com.pe/"><img decoding="async"
+                                src="https://res.cloudinary.com/dlvqvbok1/image/upload/f_auto,q_auto/v1/Materials/Banners/mx2ewtlpley0kqycnjio"
+                                alt=""></a>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <a href="https://vaope.com/eventos/conciertos/vacilandia-en-concierto-con-brunella-torpoco"><img
+                                decoding="async"
+                                src="https://res.cloudinary.com/dlvqvbok1/image/upload/f_auto,q_auto/v1/Materials/Banners/5272-WEB_SLIDER_BRUNELLA_suprml"
+                                alt=""></a>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <a href="https://vaope.com/eventos/conciertos/a-fuego-con-las-reinas-en-vacilandia-park"><img
+                                decoding="async"
+                                src="https://res.cloudinary.com/dlvqvbok1/image/upload/f_auto,q_auto/v1/Materials/Banners/dktkmyltf9xyydvrqpqs"
+                                alt=""></a>
+                    </swiper-slide>
+                </swiper-container>
+            </section>
 
 
             <div class="main-content">
 
-                <!--PROMOS-->
-                <section class="promos" style="height: 450px; padding: 0; padding: var(--espacio);">
+                <!--PROMOS
+                <section class="banner_principal" id="concierto">
                     <swiper-container class="articulo" space-between="15" pagination-clickable="true" navigation="true"
                         autoplay-delay="3000" autoplay-disable-on-interaction="true" pagination="true" keyboard="true"
                         slides-per-view="1.5" breakpoints='{"900": {"slidesPerView": 3}}'
-                        style="max-width: var(--max-width);">
+                        >
                         <swiper-slide>
                             <video
                                 src="https://res.cloudinary.com/dlvqvbok1/video/upload/w_auto/q_auto/f_auto/v1/Materials/Concierto/videos/397309937_1774524879635466_1124448625255132092_n_wcheal.mp4"
@@ -572,11 +584,11 @@
                                 alt="">
                         </swiper-slide>
                     </swiper-container>
-                </section>
+                </section>-->
 
                 <!-- NAVEGACION -->
 
-                <section class="subpanel">
+                <section class="panel_de_navegacion">
                     <div class="container">
                         <a target="_blank"
                             href="https://vaope.com/eventos/conciertos/vacilandia-en-concierto-con-brunella-torpoco"
@@ -611,21 +623,20 @@
                     </div>
                 </section>
 
-                <section class="cards-globales" id="zona_gamer" style="background: none;">
+                <section class="tarjetas" id="concierto">
                     <div class="container">
                         <div class="title">
-                            <h1 style="color: var(--blanco);">CARTELERA DE EVENTOS</h1>
+                            <h1>CARTELERA DE EVENTOS</h1>
                         </div>
                         <swiper-container class="carrusel-atracciones" space-between="15" pagination-clickable="true"
                             navigation="true" pagination="true" slides-per-view="1.5" free-mode="true"
                             autoplay-delay="2000" autoplay-disable-on-interaction="true"
-                            breakpoints='{"900": {"slidesPerView": 2.5}}'>
+                            breakpoints='{"900": {"slidesPerView": 3.5}}'>
                             <swiper-slide>
-                                <a
-                                    href="#">
+                                <a href="#">
                                     <div class="card">
                                         <img decoding="async" loading="lazy"
-                                            src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/f_auto/q_auto/v1/Materials/Cartelera_Concierto/395321822_756554526515995_892824299338965524_n_rovxvx.jpg"
+                                            src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/f_auto/q_auto/v1/Materials/Cartelera_Concierto/zexot6wxwxoefcinpzyc"
                                             alt="">
                                     </div>
                                 </a>
@@ -639,7 +650,7 @@
                                     href="https://vaope.com/eventos/conciertos/vacilandia-en-concierto-con-brunella-torpoco">
                                     <div class="card">
                                         <img decoding="async" loading="lazy"
-                                            src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/f_auto/q_auto/v1/Materials/Cartelera_Concierto/WhatsApp_Image_2023-11-03_at_9.39.55_PM_ubm8gs.jpg"
+                                            src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/f_auto/q_auto/v1/Materials/Cartelera_Concierto/iat43lmodiw9xhnaiiec"
                                             alt="">
                                     </div>
                                 </a>
@@ -649,11 +660,23 @@
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
-                                <a
-                                    href="#">
+                                <a href="#">
                                     <div class="card">
                                         <img decoding="async" loading="lazy"
-                                            src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/f_auto/q_auto/v1/Materials/Cartelera_Concierto/WhatsApp_Image_2023-11-03_at_9.41.07_PM_ptdwvd.jpg"
+                                            src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/f_auto/q_auto/v1/Materials/Cartelera_Concierto/ggqxs4a4prf8lsalxltg"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <div class="text">
+                                    <h1>Azucena Calvay, Los 4 de la cumbia</h1>
+                                    <p>Fecha: 19 de Noviembre</p>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <a href="https://vaope.com/eventos/conciertos/a-fuego-con-las-reinas-en-vacilandia-park">
+                                    <div class="card">
+                                        <img decoding="async" loading="lazy"
+                                            src="https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/f_auto/q_auto/v1/Materials/Cartelera_Concierto/otagtajxhhc2hzptmuk3"
                                             alt="">
                                     </div>
                                 </a>
@@ -668,7 +691,7 @@
 
                 <!--RESEÑAS-->
 
-                <section class="reseñas" style="background: none;">
+                <section class="reseñas" id="concierto">
                     <div class="container">
                         <div class="title">
                             <h1>CLIENTES SATISFECHOS</h1>
@@ -783,10 +806,10 @@
 
                 <!-- MAPA -->
 
-                <section class="mapa">
+                <section class="ubicacion">
                     <div class="container">
                         <div class="title">
-                            <h1 style="color: var(--blanco);">NUESTRA UBICACIÓN</h1>
+                            <h1>NUESTRA UBICACIÓN</h1>
                         </div>
                         <div class="contenido">
                             <div class="frame">
@@ -813,7 +836,7 @@
                 <section class="galeria">
                     <div class="container">
                         <div class="title">
-                            <h1 style="color: var(--blanco);">GALERÍA</h1>
+                            <h1>GALERÍA</h1>
                         </div>
                         <div class="group">
                             <div class="image">
@@ -865,8 +888,8 @@
                     </div>
                 </section>
 
-                 <!-- Modal de imagen -->
-                 <div id="modal" class="modal">
+                <!-- Modal de imagen -->
+                <div id="modal" class="modal">
                     <div class="container">
                         <span class="close-modal" id="close-modal">&times;</span>
                         <img class="modal-content" id="modal-img">
@@ -877,8 +900,8 @@
 
             <!--FOOTER-->
 
-            <footer class="footer">
-                <div class="container" style="background: rgba(var(--rgba-negro));">
+            <footer class="footer" id="concierto">
+                <div class="container">
                     <div class="row">
                         <div class="col">
                             <img decoding="async" loading="lazy"
