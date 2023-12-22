@@ -64,7 +64,7 @@ button#amarillo {
 body {
   margin: 0;
   padding: 0;
-  background: #EFEFEF;
+  background: #FAFBFD;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -192,7 +192,7 @@ main {
   transition: opacity 0.3s ease-in-out;
   /* Agregamos una transición suave a la opacidad */
   border-radius: 0 0 20px 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .navegacion_principal .navigation li:hover > .submenu {
@@ -229,7 +229,7 @@ main {
   background: #fff;
   min-width: 130px;
   border-radius: 10px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
   overflow: hidden;
 }
@@ -252,7 +252,7 @@ main {
   background: linear-gradient(to right, #05F2AF, #000000);
 }
 .navegacion_principal .logo {
-  width: 70px;
+  width: 55px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   display: flex;
@@ -428,7 +428,10 @@ main {
   width: 50px;
   height: 100%;
   background: #fff;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  background-size: 60vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   z-index: 7;
 }
@@ -447,6 +450,7 @@ main {
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  /* Muestra el título al hacer hover */
 }
 .barra_vertical .item svg {
   width: 100%;
@@ -464,6 +468,23 @@ main {
 .barra_vertical .item:hover {
   background: #d3d3d3;
 }
+.barra_vertical .item::after {
+  content: attr(title);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(10px, -50%);
+  white-space: nowrap;
+  /* Evita que el título se desplace a la siguiente línea */
+  background: #d3d3d3;
+  /* Ajusta según tu diseño */
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+.barra_vertical .item:hover::after {
+  display: block;
+}
 
 /* CONTENEDOR DE INFORMACIÓN DE LA BARRA VERTICAL DE NAVEGACIÓN */
 .contenedor_informacion {
@@ -477,7 +498,7 @@ main {
   /* Alto personalizable */
   padding-left: 50px;
   background: #f6f5f5;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease;
   /* Agregar transición */
   z-index: 6;
@@ -550,7 +571,7 @@ main {
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .contenedor_informacion .content .image img {
   width: 100%;
@@ -633,11 +654,10 @@ main {
 /* 01 - SECCIÓN DEL BANNER PRINCIPAL DE INICIO */
 .banner_principal {
   display: flex;
-  height: 520px;
+  height: auto;
   justify-content: center;
 }
 .banner_principal#concierto {
-  height: 450px !important;
   padding: 0;
 }
 .banner_principal#concierto .articulo {
@@ -650,7 +670,7 @@ main {
   margin-top: 115px;
   cursor: grab;
   overflow: hidden;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 .banner_principal .articulo video,
@@ -683,7 +703,7 @@ main {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .atracciones .carrusel-atracciones .card img {
   width: 100%;
@@ -854,7 +874,7 @@ main {
   width: 100%;
   border-radius: 20px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .promociones_precios .tab-content .card .image:hover {
@@ -915,7 +935,7 @@ main {
 
 /* 05 - SECCIÓN DE ENTRETENIMIENTO */
 .entretenimiento {
-  background: linear-gradient(45deg, rgba(67, 47, 135, 0.9), rgba(67, 47, 135, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Entretenimiento/7.%20RECORRIDO%20CORAZONES);
+  background: linear-gradient(45deg, rgba(67, 47, 135, 0.9), rgba(67, 47, 135, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 0 0 0;
@@ -946,7 +966,7 @@ main {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
 .entretenimiento .container .group .card:hover {
@@ -991,7 +1011,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 35px 0;
-  background: linear-gradient(45deg, rgba(245, 130, 32, 0.9), rgba(245, 130, 32, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Entretenimiento/7.%20RECORRIDO%20CORAZONES);
+  background: linear-gradient(45deg, rgba(245, 130, 32, 0.9), rgba(245, 130, 32, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1020,7 +1040,7 @@ main {
   width: 50%;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1096,7 +1116,7 @@ main {
 /* 07 - SECCIÓN DE SERVICIOS */
 .servicios {
   padding: 35px 0;
-  background: linear-gradient(45deg, rgba(234, 11, 139, 0.9), rgba(234, 11, 139, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Entretenimiento/cxrkg3y5lfpxttqt7exu);
+  background: linear-gradient(45deg, rgba(234, 11, 139, 0.9), rgba(234, 11, 139, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1135,7 +1155,7 @@ main {
   margin: 0 auto;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -1191,7 +1211,7 @@ main {
 
 /* 08 - SECCIÓN DE RESEÑAS */
 .reseñas {
-  background: linear-gradient(45deg, rgba(236, 33, 39, 0.9), rgba(236, 33, 39, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/q_auto/f_auto/v1/Materials/Atracciones/jni1dtqt2oajft7o6osp);
+  background: linear-gradient(45deg, rgba(236, 33, 39, 0.9), rgba(236, 33, 39, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -1200,6 +1220,9 @@ main {
 }
 .reseñas#concierto {
   background: none;
+}
+.reseñas#concierto .title h1 {
+  color: #fff;
 }
 .reseñas .container {
   max-width: 1000px;
@@ -1221,7 +1244,7 @@ main {
   z-index: 4;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   background: linear-gradient(25deg, #f0f0f0 50%, #fff 0%);
 }
 .reseñas .container .reseña-carrusel .card button {
@@ -1260,7 +1283,7 @@ main {
 
 /* 09 - SECCIÓN DE ENLACE A MAPA INTERACTIVO */
 .enlace_a_mapa {
-  background: linear-gradient(45deg, rgba(119, 192, 67, 0.9), rgba(119, 192, 67, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Otros/k1woujpafqqml8gq7ofr);
+  background: linear-gradient(45deg, rgba(119, 192, 67, 0.9), rgba(119, 192, 67, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -1293,7 +1316,7 @@ main {
   background: linear-gradient(25deg, #f0f0f0 50%, #fff 0%);
   border-radius: 20px 0 0 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .enlace_a_mapa .container .content .text h1 {
   color: #77C043;
@@ -1336,10 +1359,16 @@ main {
   display: flex;
   justify-content: center;
 }
+.ubicacion#concierto .title h1 {
+  color: #fff;
+}
 .ubicacion .container {
   max-width: 1000px;
   width: 100%;
   padding: 35px 0;
+}
+.ubicacion .container .title h1 {
+  color: #432A88 !important;
 }
 .ubicacion .container .contenido {
   border-radius: 20px;
@@ -1359,7 +1388,7 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   gap: 15px;
   background: linear-gradient(25deg, #f0f0f0 50%, #fff 0%);
   overflow: hidden;
@@ -1396,10 +1425,17 @@ main {
 .footer#concierto .container {
   background: #000000;
 }
+.footer#concierto .container .col h1 {
+  color: #fff;
+}
+.footer#concierto .container li {
+  color: #fff;
+}
+.footer#concierto .container li a {
+  color: #fff;
+}
 .footer .container {
-  background: linear-gradient(45deg, rgba(114, 76, 159, 0.7), rgba(234, 11, 139, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:%23ffffff;display:block;z-index:1;position:relative" width="1920" height="733" preserveAspectRatio="xMidYMid" viewBox="0 0 1920 733"><g transform="translate(960,366.5) scale(1,1) translate(-960,-366.5)"><linearGradient id="lg-0.6414523159003382" x1="0" x2="1" y1="0" y2="0"><stop stop-color="%23432f87" offset="0"></stop><stop stop-color="%23432f87" offset="1"></stop></linearGradient><path d="" fill="url(%23lg-0.6414523159003382)" opacity="0.4"><animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="0s" values="M0 0L 0 283.67101309538634Q 192 251.90884526447005 384 219.90646049124118T 768 299.4509100285186T 1152 270.42778080305214T 1536 218.3149507416504T 1920 89.43474323894026L 1920 0 Z;M0 0L 0 256.4143765620531Q 192 299.7801522037929 384 275.15966155989605T 768 262.2504295479387T 1152 178.41284475969195T 1536 197.5822468834999T 1920 127.96264806421516L 1920 0 Z;M0 0L 0 356.4713497916909Q 192 253.36828550994926 384 218.7997337945651T 768 276.6406492885463T 1152 199.16649389647478T 1536 226.55369246880318T 1920 146.09582312717635L 1920 0 Z;M0 0L 0 283.67101309538634Q 192 251.90884526447005 384 219.90646049124118T 768 299.4509100285186T 1152 270.42778080305214T 1536 218.3149507416504T 1920 89.43474323894026L 1920 0 Z"></animate></path><path d="" fill="url(%23lg-0.6414523159003382)" opacity="0.4"><animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-2s" values="M0 0L 0 319.11899333912424Q 192 342.44715892858386 384 323.3705368708085T 768 188.31197766532387T 1152 206.3977365614634T 1536 260.0630856779243T 1920 192.7027560727124L 1920 0 Z;M0 0L 0 322.5803039795676Q 192 229.39986654594563 384 204.19325867766983T 768 223.91297831196093T 1152 190.92343104493193T 1536 205.9548905536828T 1920 116.48944682183478L 1920 0 Z;M0 0L 0 278.01581311325333Q 192 357.7116843618869 384 326.47377518937094T 768 189.95166733320247T 1152 238.77923407518517T 1536 194.79213308826797T 1920 229.76568114706322L 1920 0 Z;M0 0L 0 319.11899333912424Q 192 342.44715892858386 384 323.3705368708085T 768 188.31197766532387T 1152 206.3977365614634T 1536 260.0630856779243T 1920 192.7027560727124L 1920 0 Z"></animate></path><path d="" fill="url(%23lg-0.6414523159003382)" opacity="0.4"><animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-4s" values="M0 0L 0 265.70792357537226Q 192 325.22216839240366 384 308.09574833381487T 768 284.299085417025T 1152 151.69916492672928T 1536 143.23381353212494T 1920 173.4754185299112L 1920 0 Z;M0 0L 0 300.28048798354644Q 192 315.08891322627363 384 279.73950821969436T 768 190.00694883403486T 1152 252.67385647634717T 1536 237.21356941230746T 1920 108.84577570387708L 1920 0 Z;M0 0L 0 248.25846334993983Q 192 305.09726028659037 384 281.1192359766636T 768 211.52210365369277T 1152 263.5222112452816T 1536 189.94224228611233T 1920 137.51683681406817L 1920 0 Z;M0 0L 0 265.70792357537226Q 192 325.22216839240366 384 308.09574833381487T 768 284.299085417025T 1152 151.69916492672928T 1536 143.23381353212494T 1920 173.4754185299112L 1920 0 Z"></animate></path><path d="" fill="url(%23lg-0.6414523159003382)" opacity="0.4"><animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-6s" values="M0 0L 0 286.3493905363014Q 192 342.28420876834826 384 314.8956215557967T 768 215.98284531743803T 1152 260.90811640334937T 1536 216.50072421424076T 1920 178.36056007245588L 1920 0 Z;M0 0L 0 356.8625319430233Q 192 355.9450988834828 384 322.88040687433835T 768 305.87326091898814T 1152 163.61380961400653T 1536 153.31345546376107T 1920 210.78092083370515L 1920 0 Z;M0 0L 0 314.1642929577042Q 192 296.2839880062296 384 275.74125569654603T 768 178.8165812149103T 1152 217.30665057415231T 1536 232.7583527371458T 1920 161.3447175282529L 1920 0 Z;M0 0L 0 286.3493905363014Q 192 342.28420876834826 384 314.8956215557967T 768 215.98284531743803T 1152 260.90811640334937T 1536 216.50072421424076T 1920 178.36056007245588L 1920 0 Z"></animate></path><path d="" fill="url(%23lg-0.6414523159003382)" opacity="0.4"><animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-8s" values="M0 0L 0 314.4635413808246Q 192 318.68786048494786 384 280.964277423555T 768 241.46074570631606T 1152 269.55787020074393T 1536 173.91253022947163T 1920 132.84624080679197L 1920 0 Z;M0 0L 0 364.7365876051235Q 192 331.5103366576035 384 293.6633783753306T 768 204.87922582630816T 1152 170.6802348569447T 1536 130.9372347072474T 1920 178.07010597963594L 1920 0 Z;M0 0L 0 337.40078620761733Q 192 290.73326277397297 384 266.7934235130969T 768 305.7026594666869T 1152 163.84949370980084T 1536 166.04794457687478T 1920 153.54521712495676L 1920 0 Z;M0 0L 0 314.4635413808246Q 192 318.68786048494786 384 280.964277423555T 768 241.46074570631606T 1152 269.55787020074393T 1536 173.91253022947163T 1920 132.84624080679197L 1920 0 Z"></animate></path></g></svg>');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #fff;
   width: 100%;
   padding: 35px 20px 20px;
   display: flex;
@@ -1408,7 +1444,7 @@ main {
   gap: 40px;
 }
 .footer .container a {
-  color: #fff;
+  color: #3b3b3b;
 }
 .footer .container .row {
   display: flex;
@@ -1420,7 +1456,7 @@ main {
   width: 140px;
 }
 .footer .container .row h1 {
-  color: #fff;
+  color: #3b3b3b;
   font-family: "Lilita One", sans-serif;
   font-weight: lighter;
   font-size: 1rem;
@@ -1435,7 +1471,7 @@ main {
   gap: 5px;
 }
 .footer .container .row ul li {
-  color: #fff;
+  color: #3b3b3b;
   font-size: 0.75rem;
   font-family: "Poppins", sans-serif;
 }
@@ -1479,7 +1515,7 @@ main {
 .preguntas_y_respuestas .container .faq-list .faq-item {
   width: 100%;
   border-radius: 15px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
   overflow: hidden;
   transition: background-color 0.3s ease;
@@ -1626,12 +1662,12 @@ main {
   padding: 35px 0;
   display: flex;
   justify-content: center;
-  background: linear-gradient(45deg, rgba(236, 33, 39, 0.9), rgba(245, 130, 32, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/q_auto/f_auto/v1/Materials/Atracciones/jni1dtqt2oajft7o6osp);
+  background: linear-gradient(45deg, rgba(236, 33, 39, 0.9), rgba(245, 130, 32, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .tarjetas#campeonatos {
-  background: linear-gradient(45deg, rgba(119, 192, 67, 0.9), rgba(43, 171, 226, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/q_auto/f_auto/v1/Materials/Atracciones/jni1dtqt2oajft7o6osp);
+  background: linear-gradient(45deg, rgba(119, 192, 67, 0.9), rgba(43, 171, 226, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
 }
 .tarjetas#campeonatos .title h1 {
   color: #fff;
@@ -1640,10 +1676,10 @@ main {
   color: #fff;
 }
 .tarjetas#piscinas, .tarjetas#zona_gamer {
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/q_auto/f_auto/v1/Materials/Atracciones/jni1dtqt2oajft7o6osp);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
 }
 .tarjetas#concierto {
-  background: none;
+  background: linear-gradient(45deg, rgba(236, 33, 39, 0.8), rgba(234, 11, 139, 0.8)), url(https://res.cloudinary.com/dddlebwyr/image/upload/w_800/q_auto/f_auto/Concierto/VCLNDIA_IMG_2959_nlxlnh.jpg);
 }
 .tarjetas#concierto .container .title h1 {
   color: #fff;
@@ -1679,7 +1715,7 @@ main {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   cursor: grab;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .tarjetas .container .carrusel-atracciones .card::after {
   position: absolute;
@@ -1731,7 +1767,7 @@ main {
 
 /* 14 - SECCIÓN DE INFORMACIÓN DE LAS PISCINAS */
 .piscinas {
-  background: linear-gradient(45deg, rgba(114, 76, 159, 0.9), rgba(43, 171, 226, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Otros/k1woujpafqqml8gq7ofr);
+  background: linear-gradient(45deg, rgba(114, 76, 159, 0.9), rgba(43, 171, 226, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -1779,7 +1815,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   height: 300px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
 .piscinas .container .carrusel .row .carrusel-image .image:hover {
@@ -1825,6 +1861,9 @@ main {
   justify-content: center;
   padding: 35px 0;
 }
+.galeria#concierto .title h1 {
+  color: #fff;
+}
 .galeria .container {
   max-width: 1000px;
   width: 100%;
@@ -1844,7 +1883,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   grid-row-end: span auto;
   /* Altura automática según el contenido */
@@ -1928,7 +1967,7 @@ main {
   justify-content: center;
 }
 .carrusel_texto_imagen#barcilon {
-  background: linear-gradient(45deg, rgba(67, 47, 135, 0.9), rgba(236, 33, 39, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Otros/k1woujpafqqml8gq7ofr);
+  background: linear-gradient(45deg, rgba(67, 47, 135, 0.9), rgba(236, 33, 39, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1936,7 +1975,7 @@ main {
   color: #fff;
 }
 .carrusel_texto_imagen#zona_gamer {
-  background: linear-gradient(45deg, rgba(236, 33, 39, 0.9), rgba(245, 130, 32, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Otros/k1woujpafqqml8gq7ofr);
+  background: linear-gradient(45deg, rgba(236, 33, 39, 0.9), rgba(245, 130, 32, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1988,7 +2027,7 @@ main {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   cursor: grab;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .carrusel_texto_imagen .container .carrusel-atracciones .card img {
   width: 100%;
@@ -2030,6 +2069,9 @@ main {
   display: flex;
   justify-content: center;
 }
+.introduccion#rincon_chelero .title h1 {
+  color: #432A88;
+}
 .introduccion#rincon_chelero .text h1 {
   color: #432A88;
 }
@@ -2059,7 +2101,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px 0 0 20px;
   z-index: 4;
 }
@@ -2077,7 +2119,7 @@ main {
 }
 .introduccion .container .image {
   overflow: hidden;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
   height: 300px;
 }
@@ -2091,12 +2133,28 @@ main {
 
 /* 20 - SECCIÓN DE ANIMALES O DETALLE EN COLUMNA CON IMAGEN */
 .animales {
-  background: linear-gradient(45deg, rgba(104, 58, 16, 0.9), rgba(119, 192, 67, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/q_auto/f_auto/Materials/Canchas%20Deportivas/DJI_0113-min_r7vuby.jpg);
+  background: linear-gradient(45deg, rgba(104, 58, 16, 0.9), rgba(119, 192, 67, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 0;
   display: flex;
   justify-content: center;
+}
+.animales#concierto {
+  background: linear-gradient(45deg, rgba(43, 171, 226, 0.9), rgba(255, 210, 0, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
+}
+.animales#concierto .card {
+  height: calc(100% - 10px);
+}
+.animales#concierto .card .text h1 {
+  color: #2BABE2;
+}
+.animales#concierto .card .text p {
+  margin: 5px 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 0.75rem;
+  color: #777777;
+  padding: 0px 20px;
 }
 .animales .container {
   max-width: 1000px;
@@ -2119,7 +2177,7 @@ main {
   overflow: hidden;
   align-items: center;
   border-radius: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   background: linear-gradient(25deg, #f0f0f0 50%, #fff 0%);
   transition: all 0.3s ease-in-out;
 }
@@ -2157,12 +2215,12 @@ main {
   justify-content: center;
 }
 .canchas#voley {
-  background: linear-gradient(45deg, rgba(119, 192, 67, 0.9), rgba(43, 171, 226, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/q_auto/f_auto/Materials/Canchas%20Deportivas/DJI_0113-min_r7vuby.jpg);
+  background: linear-gradient(45deg, rgba(119, 192, 67, 0.9), rgba(43, 171, 226, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .canchas#futbol {
-  background: linear-gradient(45deg, rgba(43, 171, 226, 0.9), rgba(119, 192, 67, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_1000/q_auto/f_auto/Materials/Canchas%20Deportivas/DJI_0109-min_tbgstq.jpg);
+  background: linear-gradient(45deg, rgba(43, 171, 226, 0.9), rgba(119, 192, 67, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2186,7 +2244,7 @@ main {
   width: 60%;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .canchas .container .contenido .col-image img {
   width: 100%;
@@ -2216,7 +2274,7 @@ main {
   background: linear-gradient(25deg, #f0f0f0 50%, #fff 0%);
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
 .canchas .container .contenido .col-text .content:hover {
@@ -2248,7 +2306,7 @@ main {
   width: 100%;
   gap: 15px;
   justify-content: center;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
 }
 .carta_gastronomica .container .tabs .tab {
@@ -2316,7 +2374,7 @@ main {
 
 /* 23 - SECCIÓN DE INFORMACIÓN DE PDF CON QR */
 .seccion_pdf {
-  background: linear-gradient(45deg, rgba(245, 130, 32, 0.9), rgba(236, 33, 39, 0.9)), url(https://res.cloudinary.com/dlvqvbok1/image/upload/w_500/q_auto/f_auto/v1/Materials/Otros/k1woujpafqqml8gq7ofr);
+  background: linear-gradient(45deg, rgba(245, 130, 32, 0.9), rgba(236, 33, 39, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/v1500/f_auto/q_auto/MicrosoftTeams-image_4_thsiny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 0;
@@ -2335,7 +2393,7 @@ main {
   height: auto;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .seccion_pdf .container .promociones_precios-pdf img {
   width: 100%;
@@ -2346,7 +2404,7 @@ main {
   height: auto;
 }
 .seccion_pdf .container .content img {
-  width: 30%;
+  width: 100px;
 }
 .seccion_pdf .container .content h1 {
   font-family: "Lilita One", sans-serif;
@@ -2366,6 +2424,12 @@ main {
 .seccion_pdf .container .content button:hover {
   background: #F58220;
   color: #fff;
+}
+.seccion_pdf .container .carta-pdf {
+  width: 30%;
+}
+.seccion_pdf .container .carta-pdf img {
+  width: 100%;
 }
 
 /* 24 - SECCIÓN DE IMAGENES ESTILO CARRUSEL VERTICAL */
@@ -2390,7 +2454,7 @@ main {
   width: 70%;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .carrusel_imagenes .container .content .mySwiper swiper-slide img {
   width: 100%;
@@ -2460,7 +2524,7 @@ main {
   margin: 0 10px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   position: relative;
 }
 #carrusel_caracteristicas .container .carrusel-fotos .image img {
@@ -2508,14 +2572,14 @@ main {
 .formulario_de_contacto .container .col-form iframe {
   height: 100%;
   width: 100%;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 .formulario_de_contacto .container .content {
   height: 80%;
   overflow: hidden;
   border-radius: 0px 20px 20px 0px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .formulario_de_contacto .container .content img {
   width: 100%;
@@ -2545,7 +2609,7 @@ main {
   align-items: center;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .paquetes_informacion .container .card .image {
   width: 40%;
@@ -2624,7 +2688,7 @@ main {
   flex-direction: column;
   gap: 5px;
   background: #fff;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 .informacion_empresa .col-text .content .row h1 {
@@ -2674,7 +2738,7 @@ main {
   height: auto;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .trabajo .container .content .col-wrapper .card img {
   width: 160px;
@@ -2820,6 +2884,155 @@ main {
   object-fit: cover;
 }
 
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+}
+.popup .popup-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.popup .popup-content img {
+  max-width: 400px;
+  width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+}
+.popup .popup-content button {
+  background: #EC2127;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.aviso {
+  padding: 35px 0;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.aviso h3 {
+  background: #724C9F;
+  border-radius: 10px;
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.cartelera {
+  padding-top: 35px;
+  padding-bottom: 85px;
+  background: linear-gradient(45deg, rgba(236, 33, 39, 0.9), rgba(234, 11, 139, 0.9)), url(https://res.cloudinary.com/dddlebwyr/image/upload/w_800/q_auto/f_auto/Concierto/VCLNDIA_IMG_2959_nlxlnh.jpg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cartelera .title h1 {
+  color: #fff;
+}
+.cartelera .container {
+  max-width: 1000px;
+  width: 100%;
+  padding-top: 35px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cartelera .container .video {
+  width: 40%;
+}
+.cartelera .container .eventos {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.cartelera .container .eventos .bloque {
+  display: flex;
+  width: 109%;
+  height: 100%;
+  border-radius: 20px;
+}
+.cartelera .container .eventos .bloque .image {
+  width: 100%;
+  height: auto;
+}
+.cartelera .container .eventos .bloque .image img {
+  transform: scale(1.04);
+  width: 100%;
+  cursor: pointer;
+}
+.cartelera .container .eventos .bloque .text {
+  transform: translate(-50px, 40px);
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  box-shadow: 8px 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+.cartelera .container .eventos .bloque .text .fecha {
+  transform: translate(-10px, -40px);
+  position: absolute;
+  background: #2BABE2;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.cartelera .container .eventos .bloque .text .fecha p {
+  color: #fff;
+  font-family: "Lilita One", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cartelera .container .eventos .bloque .text .content {
+  height: 100%;
+  display: flex;
+  padding-top: 25px;
+  flex-direction: column;
+  gap: 5px;
+}
+.cartelera .container .eventos .bloque .text .content h1 {
+  font-family: "Lilita One", sans-serif;
+  color: #3b3b3b;
+  font-size: 1rem;
+}
+.cartelera .container .eventos .bloque .text .content h2 {
+  color: #191919;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+}
+.cartelera .container .eventos .bloque .text .content p {
+  color: #191919;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cartelera .container .eventos .bloque .text .content p i {
+  color: #EA0B8B;
+  font-size: 7px;
+}
+.cartelera .container .eventos .bloque .text .content button {
+  margin-top: 10px;
+  width: 100%;
+}
+
 /* MEDIA QUERY PARA PANTALLAS INFERIORES A 1100PX */
 /* MEDIA QUERY PARA PANTALLAS INFERIORES A 1100PX */
 /* MEDIA QUERY PARA PANTALLAS INFERIORES A 1100PX */
@@ -2875,6 +3088,7 @@ main {
   .introduccion .text p {
     padding: 0;
   }
+  .cartelera,
   .canchas,
   .introduccion,
   .carrusel_imagenes,
@@ -2945,6 +3159,19 @@ main {
   }
   #responsive_navegacion {
     display: block;
+  }
+  .cartelera {
+    padding-bottom: 115px;
+  }
+  .cartelera .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cartelera .container .video {
+    width: 100%;
+  }
+  .cartelera .container .eventos {
+    width: 100%;
   }
 }
 /* MEDIA QUERY PARA PANTALLAS INFERIORES A 900PX */

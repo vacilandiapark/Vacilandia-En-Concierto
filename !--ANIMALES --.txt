@@ -1,0 +1,76 @@
+<!--ANIMALES -->
+
+                <section class="animales" id="concierto">
+                    <div class="container">
+
+                        <!-- TÍTULO GLOBAL EN TODAS LAS PÁGINAS -->
+
+                        <div class="title">
+                            <h1>EVENTOS ANTERIORES</h1>
+                        </div>
+
+                        <!-- CONTENIDO PARA LOS ANIMALES -->
+
+                        <div class="contenido">
+
+                            <!-- TARJETA CON IMAGEN DE LOS ANIMALES Y TEXTO-->
+
+                            <div class="card">
+                                <div class="image">
+                                    <img decoding="async" loading="lazy"
+                                        src="https://res.cloudinary.com/dddlebwyr/image/upload/w_500/q_auto/f_auto/Cartelera%20de%20eventos/395321822_756554526515995_892824299338965524_n_1_hhhb3z.jpg"
+                                        alt="">
+                                </div>
+                                <div class="text">
+                                    <h1>PAPILLÓN Y LOS 5 DE ORO</h1>
+                                    <p>FECHA: 5 DE NOVIEMBRE</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img decoding="async" loading="lazy"
+                                        src="https://res.cloudinary.com/dddlebwyr/image/upload/w_500/q_auto/f_auto/Cartelera%20de%20eventos/401755124_768286308676150_2240653233718375695_n_wvvkk6.jpg"
+                                        alt="">
+                                </div>
+                                <div class="text">
+                                    <h1>LOS 4 DE LA CUMBIA Y AZUCENA CALVAY</h1>
+                                    <h1>PAPILLÓN Y LOS 5 DE ORO</h1>
+                                    <p>FECHA: 19 DE NOVIEMBRE</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img decoding="async" loading="lazy"
+                                        src="https://res.cloudinary.com/dddlebwyr/image/upload/w_500/q_auto/f_auto/Cartelera%20de%20eventos/400422408_763953949109386_9136749445409984066_n_tpgojm.jpg"
+                                        alt="">
+                                </div>
+                                <div class="text">
+                                    <h1>LA CHINA DE LA SALSA Y BRUNELLA TORPOCO</h1>
+                                    <p>FECHA: 12 DE NOVIEMBRE</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img decoding="async" loading="lazy"
+                                        src="https://res.cloudinary.com/dddlebwyr/image/upload/w_500/q_auto/f_auto/Cartelera%20de%20eventos/402864687_331942729438417_6933594536462800173_n_srqjlu.jpg"
+                                        alt="">
+                                </div>
+                                <div class="text">
+                                    <h1>SUU RABANAL, ANGIE CHÁVEZ, YAHAIRA PLASENCIA Y LOS CAPOS DEL VALLENATO</h1>
+                                    <p>FECHA: 26 DE NOVIEMBRE</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img decoding="async" loading="lazy"
+                                        src="https://res.cloudinary.com/dddlebwyr/image/upload/w_500/q_auto/f_auto/Cartelera%20de%20eventos/407705498_338707402095283_1947931588042651170_n_nfempf.jpg"
+                                        alt="">
+                                </div>
+                                <div class="text">
+                                    <h1>DILBERT AGUILAR Y LA TRIBU</h1>
+                                    <p>FECHA: 03 DE DICIEMBRE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
