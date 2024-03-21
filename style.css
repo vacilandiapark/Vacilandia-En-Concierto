@@ -135,7 +135,7 @@ button:hover {
 }
 
 .banner .intro {
-    width: 35%;
+    width: 25%;
 }
 
 .banner .intro h1 {
@@ -168,7 +168,7 @@ button:hover {
 }
 
 .banner .carrusel_banner {
-    width: 65%;
+    width: 75%;
     overflow: hidden;
     border-radius: 30px;
 }
